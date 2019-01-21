@@ -571,7 +571,11 @@ figure {
 
 iframe {
 	border: 0;
-	max-width: 560px;
+	}
+
+.elementor-widget-video {
+	margin: 0 auto !important;
+	max-width: 560px !important;
 	}
 
 .site-container {

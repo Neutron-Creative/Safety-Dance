@@ -27,5 +27,9 @@ figure {
 
 iframe {
 	border: 0;
-	max-width: 560px;
+}
+
+.elementor-widget-video {
+	max-width: 560px !important;
+	margin: 0 auto !important;
 }
