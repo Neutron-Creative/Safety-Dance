@@ -94,5 +94,9 @@ legend {
 .happyforms-form {
 	form {
 		--happyforms-form-width: 100% !important;
+
+		.happyforms-part__select-wrap {
+			height: 40px !important;
+		}
 	}
 }

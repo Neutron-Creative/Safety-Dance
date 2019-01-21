@@ -547,6 +547,10 @@ legend + * {
 	--happyforms-form-width: 100% !important;
 	}
 
+.happyforms-form form .happyforms-part__select-wrap {
+	height: 40px !important;
+	}
+
 table {
 	border-collapse: collapse;
 	border-radius: 0;
