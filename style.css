@@ -326,6 +326,19 @@ h4 {
 	font-weight: 700 !important;
 	}
 
+h6 {
+	border: solid 1px #ccc;
+	border-left: 0;
+	border-right: 0;
+	color: #000 !important;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: 700 !important;
+	line-height: 30px;
+	line-height: 3rem;
+	margin: 0 0 20px 0;
+	}
+
 p, .elementor-widget-text-editor {
 	color: #000;
 	font-family: Arial, Helvetica, sans-serif !important;
