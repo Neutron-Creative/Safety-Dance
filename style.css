@@ -543,6 +543,10 @@ legend + * {
 	clear: both;
 	}
 
+.happyforms-form form {
+	--happyforms-form-width: 100% !important;
+	}
+
 table {
 	border-collapse: collapse;
 	border-radius: 0;
