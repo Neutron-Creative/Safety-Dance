@@ -588,6 +588,30 @@ body {
 	background-color: #222;
 	}
 
+body.admin-bar .announcement-banner {
+	top: 32px;
+	}
+
+.announcement-banner {
+	background: #777;
+	color: #efefef;
+	display: flex;
+	height: 35px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+
+	justify-content: center;
+	align-items: center;
+	}
+
+.announcement-banner img {
+	display: inline-block;
+	}
+
 .site-header {
 	background-color: #ff0;
 	border-bottom: 0;

@@ -22,4 +22,32 @@
 
 body {
     background-color: #222222;
+    margin-top:
+}
+
+body.admin-bar {
+
+    .announcement-banner {
+        top: 32px;
+    }
+}
+
+.announcement-banner {
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 999;
+    background: #777;
+    color: #EFEFEF;
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
