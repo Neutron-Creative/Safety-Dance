@@ -675,6 +675,10 @@ body.admin-bar .announcement-banner {
 	padding: 0 50px 20px 50px !important;
 	}
 
+.post-edit-link {
+	display: none;
+	}
+
 .site-footer {
 	border-top: 1px solid #dfe2e5;
 	margin-top: auto;
@@ -974,7 +978,7 @@ body.admin-bar .announcement-banner {
 	background-position: center;
 	background-size: cover;
 	border-bottom: 1px solid #dfe2e5;
-	display: flex;
+	display: none;
 	overflow: hidden;
 	padding: 4.8rem 0;
 	position: relative;
@@ -1186,7 +1190,7 @@ body.admin-bar .announcement-banner {
 	background-position: center;
 	background-size: cover;
 	border-bottom: 1px solid #dfe2e5;
-	display: flex;
+	display: none;
 	overflow: hidden;
 	padding: 4.8rem 0;
 	position: relative;
