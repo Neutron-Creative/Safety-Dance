@@ -14,11 +14,14 @@
 	border-bottom: 0;
 	.wrap {
 		height: 100%;
+		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
-
+		max-width: none;
+		box-sizing: border-box;
+		padding: 0 40px;
 		@include mq(m) {
 			flex-wrap: nowrap;
 		}
@@ -30,6 +33,8 @@
 		ul {
 			background: none !important;
 			li {
+				padding-left: 0;
+				margin-left: 5px;
 				a {
 					color: #0094DE !important;
 					font-size: 20px !important;
@@ -40,7 +45,7 @@
 					background-size: contain !important;
 					background-position: left center !important;
 					background-repeat: no-repeat !important;
-					padding-left: 20px !important;
+					padding-left: 15px !important;
 					box-sizing: border-box !important;
 					&:hover {
 						color: #000 !important;

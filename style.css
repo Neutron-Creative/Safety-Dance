@@ -641,8 +641,12 @@ body.admin-bar .announcement-banner {
 	}
 
 .site-header .wrap {
+	box-sizing: border-box;
 	display: flex;
 	height: 100%;
+	max-width: none;
+	padding: 0 40px;
+	width: 100%;
 
 	flex-wrap: wrap;
 	align-items: center;
@@ -658,6 +662,11 @@ body.admin-bar .announcement-banner {
 	background: none !important;
 	}
 
+.site-header .wrap ul li {
+	margin-left: 5px;
+	padding-left: 0;
+	}
+
 .site-header .wrap ul li a {
 	background-image: url("/wp-content/uploads/2019/01/lightning-black.png") !important;
 	background-position: left center !important;
@@ -668,7 +677,7 @@ body.admin-bar .announcement-banner {
 	font-size: 20px !important;
 	font-size: 2rem !important;
 	font-weight: bold !important;
-	padding-left: 20px !important;
+	padding-left: 15px !important;
 	text-decoration: none !important;
 	text-transform: capitalize !important;
 	}
