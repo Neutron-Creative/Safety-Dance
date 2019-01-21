@@ -663,8 +663,8 @@ body.admin-bar .announcement-banner {
 	}
 
 .site-header .wrap ul li {
-	margin-left: 5px;
-	padding-left: 0;
+	margin: 5px 0;
+	padding: 0 !important;
 	}
 
 .site-header .wrap ul li a {
@@ -677,7 +677,7 @@ body.admin-bar .announcement-banner {
 	font-size: 20px !important;
 	font-size: 2rem !important;
 	font-weight: bold !important;
-	padding-left: 15px !important;
+	padding-left: 20px !important;
 	text-decoration: none !important;
 	text-transform: capitalize !important;
 	}
