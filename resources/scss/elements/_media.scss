@@ -33,3 +33,28 @@ iframe {
 	max-width: 560px !important;
 	margin: 0 auto !important;
 }
+
+.elementor-accordion {
+	.elementor-accordion-item {
+		border: 0 !important;
+	}
+	.elementor-tab-title {
+		color: #00F;
+		text-decoration: underline;
+		font-size: 15px;
+		cursor: pointer;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		padding-top: 15px;
+		border-bottom: none !important;
+	}
+	.elementor-tab-content {
+		font-size: 14px;
+		line-height: 20px;
+		color: black;
+		border: none !important;
+	}
+	a {
+		outline: none !important;
+	}
+}
