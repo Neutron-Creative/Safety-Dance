@@ -7,11 +7,14 @@
 ////
 
 .site-header {
+	background-color: #FFFF00;
+	height: 50px;
 	position: relative;
 	z-index: 1;
-	border-bottom: $base--border;
+	border-bottom: 0;
 
 	.wrap {
+		height: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -19,6 +22,22 @@
 
 		@include mq(m) {
 			flex-wrap: nowrap;
+		}
+
+		img {
+			height: 38px;
+			width: auto;
+		}
+		ul {
+			li {
+				a {
+					color: #0094DE !important;
+					font-size: 18px !important;
+					font-weight: bold !important;
+					text-transform: capitalize !important;
+					font-style: italic !important;
+				}
+			}
 		}
 	}
 }

@@ -528,18 +528,55 @@ iframe {
 	border: 0;
 	}
 
+.site-container {
+	background: #0094de;
+	/* Old browsers */
+	/* FF3.6-15 */
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #0094de 0%, #fff 35%);
+	/* IE6-9 */
+	border-radius: 8px;
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0094de', endColorstr='#ffffff',GradientType=0 );
+	margin: 0 auto;
+	max-width: 1024px;
+	overflow: hidden;
+	width: 100%;
+	}
+
+body {
+	background-color: #222;
+	}
+
 .site-header {
-	border-bottom: 1px solid #dfe2e5;
+	background-color: #ff0;
+	border-bottom: 0;
+	height: 50px;
 	position: relative;
 	z-index: 1;
 	}
 
 .site-header .wrap {
 	display: flex;
+	height: 100%;
 
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
+	}
+
+.site-header .wrap img {
+	height: 38px;
+	width: auto;
+	}
+
+.site-header .wrap ul li a {
+	color: #0094de !important;
+	font-size: 18px !important;
+	font-size: 1.8rem !important;
+	font-style: italic !important;
+	font-weight: bold !important;
+	text-transform: capitalize !important;
 	}
 
 .site-footer {
