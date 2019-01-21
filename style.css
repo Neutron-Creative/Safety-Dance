@@ -683,6 +683,7 @@ body.admin-bar .announcement-banner {
 	}
 
 .site-header .wrap ul li a:hover {
+	background-image: url("/wp-content/uploads/2019/01/lightning-blue.png") !important;
 	color: #000 !important;
 	}
 
