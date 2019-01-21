@@ -293,12 +293,23 @@ pre samp {
 h1 {
 	color: #ff0 !important;
 	display: block !important;
-	font-size: 56px !important;
-	font-size: 5.6rem !important;
+	font-size: 72px !important;
+	font-size: 7.2rem !important;
 	font-style: italic !important;
 	font-weight: 700 !important;
+	letter-spacing: 4px !important;
+	letter-spacing: 0.4rem !important;
 	text-align: center !important;
-	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red, 2px 2px 0 black !important;
+	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red, 4px 4px 0 black !important;
+	}
+
+p {
+	color: #000 !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 14px !important;
+	font-size: 1.4rem !important;
+	line-height: 25px !important;
+	line-height: 2.5rem !important;
 	}
 
 h1, h2, h3, h4, h5, h6 {
@@ -598,6 +609,10 @@ body {
 
 .site-header .wrap ul li a:hover {
 	color: #000 !important;
+	}
+
+.site-inner {
+	padding: 20px 50px !important;
 	}
 
 .site-footer {
