@@ -36,6 +36,12 @@
 					font-weight: bold !important;
 					text-transform: capitalize !important;
 					text-decoration: none !important;
+					background-image: url('/wp-content/uploads/2019/01/lightning-black.png') !important;
+					background-size: contain !important;
+					background-position: left center !important;
+					background-repeat: no-repeat !important;
+					padding-left: 20px !important;
+					box-sizing: border-box !important;
 					&:hover {
 						color: #000 !important;
 					}

@@ -659,10 +659,16 @@ body.admin-bar .announcement-banner {
 	}
 
 .site-header .wrap ul li a {
+	background-image: url("/wp-content/uploads/2019/01/lightning-black.png") !important;
+	background-position: left center !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	box-sizing: border-box !important;
 	color: #0094de !important;
 	font-size: 20px !important;
 	font-size: 2rem !important;
 	font-weight: bold !important;
+	padding-left: 20px !important;
 	text-decoration: none !important;
 	text-transform: capitalize !important;
 	}
