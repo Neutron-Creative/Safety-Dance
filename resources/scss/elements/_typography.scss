@@ -97,13 +97,17 @@ pre {
 	}
 }
 
+*, h1, h2, h3, h4, h5, h6, p, input, textarea, select {
+	font-family: Arial, Helvetica, sans-serif !important;
+}
+
 h1 {
 	display: block !important;
 	text-align: center !important;
-	font-size: 72px !important;
+	font-size: 68px !important;
 	font-weight: 700 !important;
 	color: #FFFF00 !important;
-	letter-spacing: 4px !important;
+	letter-spacing: 8px !important;
 	font-style: italic !important;
 	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red, 4px 4px 0 black !important;
 	margin-bottom: 40px !important;
