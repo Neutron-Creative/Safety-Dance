@@ -586,6 +586,11 @@ iframe {
 
 body {
 	background-color: #222;
+	margin-top: 0;
+	}
+
+body.admin-bar {
+	margin-top: 32px;
 	}
 
 body.admin-bar .announcement-banner {
@@ -596,6 +601,8 @@ body.admin-bar .announcement-banner {
 	background: #777;
 	color: #efefef;
 	display: flex;
+	font-size: 14px;
+	font-size: 1.4rem;
 	height: 35px;
 	left: 0;
 	position: absolute;
@@ -609,7 +616,8 @@ body.admin-bar .announcement-banner {
 	}
 
 .announcement-banner img {
-	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
 	}
 
 .site-header {
