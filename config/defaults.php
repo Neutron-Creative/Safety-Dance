@@ -233,6 +233,12 @@ $core_hero_section = [
 $core_hooks = [
 	Hooks::ADD    => [
 		[
+			Hooks::TAG      => 'genesis_before_header',
+			Hooks::CALLBACK => function ( ) {
+				echo '<div class="announcement-banner">ED&amp;D has been named an <img src="/wp-content/uploads/2019/01/inc-5000.png"/> company.</div>'
+			}
+		],
+		[
 			Hooks::TAG      => 'template_include',
 			Hooks::CALLBACK => function ( $template ) {
 				if ( ! is_front_page() || 'posts' === get_option( 'show_on_front' ) ) {
