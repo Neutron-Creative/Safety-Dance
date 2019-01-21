@@ -290,6 +290,16 @@ pre samp {
 	padding: 0;
 	}
 
+h1 {
+	color: #ff0 !important;
+	display: block !important;
+	font-size: 56px !important;
+	font-size: 5.6rem !important;
+	font-weight: 700 !important;
+	text-align: center !important;
+	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red, 0 2px 2px black !important;
+	}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 	font-weight: 600;
@@ -577,11 +587,16 @@ body {
 
 .site-header .wrap ul li a {
 	color: #0094de !important;
-	font-size: 18px !important;
-	font-size: 1.8rem !important;
+	font-size: 20px !important;
+	font-size: 2rem !important;
 	font-style: italic !important;
 	font-weight: bold !important;
+	text-decoration: none !important;
 	text-transform: capitalize !important;
+	}
+
+.site-header .wrap ul li a:hover {
+	color: #000 !important;
 	}
 
 .site-footer {
