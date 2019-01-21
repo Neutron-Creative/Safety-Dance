@@ -235,7 +235,7 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'genesis_before_header',
 			Hooks::CALLBACK => function ( ) {
-				echo '<div class="announcement-banner">ED&amp;D has been named an <img src="/wp-content/uploads/2019/01/inc-5000.png"/> company.</div>'
+				echo '<div class="announcement-banner">ED&amp;D has been named an <img src="/wp-content/uploads/2019/01/inc-5000.png"/> company.</div>';
 			}
 		],
 		[
