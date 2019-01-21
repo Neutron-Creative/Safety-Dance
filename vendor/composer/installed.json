@@ -1,0 +1,102 @@
+[
+    {
+        "name": "tgmpa/tgm-plugin-activation",
+        "version": "dev-develop",
+        "version_normalized": "dev-develop",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/TGMPA/TGM-Plugin-Activation.git",
+            "reference": "f67662de655b1c1a8caeb2354ad63b071900146a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/TGMPA/TGM-Plugin-Activation/zipball/f67662de655b1c1a8caeb2354ad63b071900146a",
+            "reference": "f67662de655b1c1a8caeb2354ad63b071900146a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "require-dev": {
+            "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+            "phpcompatibility/phpcompatibility-wp": "^1.0",
+            "wp-coding-standards/wpcs": "^1.0"
+        },
+        "time": "2018-08-06T07:47:18+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "class-tgm-plugin-activation.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Thomas Griffin",
+                "homepage": "http://thomasgriffinmedia.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Gary Jones",
+                "homepage": "https://github.com/GaryJones",
+                "role": "Developer"
+            },
+            {
+                "name": "Juliette Reinders Folmer",
+                "homepage": "https://github.com/jrfnl",
+                "role": "Developer"
+            }
+        ],
+        "description": "TGM Plugin Activation is a PHP library that allows you to easily require or recommend plugins for your WordPress themes (and plugins).",
+        "homepage": "http://tgmpluginactivation.com",
+        "keywords": [
+            "activation",
+            "library",
+            "plugins",
+            "theme",
+            "wordpress"
+        ]
+    },
+    {
+        "name": "seothemes/core",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/seothemes/core.git",
+            "reference": "b11b3d3556604e891aa822137b042d2e5315e6f7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/seothemes/core/zipball/b11b3d3556604e891aa822137b042d2e5315e6f7",
+            "reference": "b11b3d3556604e891aa822137b042d2e5315e6f7",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "time": "2018-09-08T08:50:03+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "SeoThemes\\Core\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "seothemes",
+                "email": "seothemeswp@gmail.com"
+            }
+        ],
+        "description": "A config-based composer package that provides a set of modules to extend Genesis child theme development."
+    }
+]

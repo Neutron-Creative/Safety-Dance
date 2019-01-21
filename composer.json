@@ -1,0 +1,53 @@
+{
+  "name": "seothemes/safety-dance",
+  "type": "wordpress-theme",
+  "description": "Genesis starter theme with a modern development workflow.",
+  "keywords": [
+    "WordPress",
+    "wordpress-theme-development",
+    "genesis-framework"
+  ],
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Lee Anthony",
+      "homepage": "https://neutroncreative.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/seothemes/safety-dance/issues",
+    "source": "https://github.com/seothemes/safety-dance"
+  },
+  "require": {
+    "php": ">=5.4",
+    "seothemes/core": "dev-master",
+    "tgmpa/tgm-plugin-activation": "dev-develop"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "NeutronCreative\\SafetyDance\\": "app/"
+    }
+  },
+  "suggest": {},
+  "config": {
+    "sort-order": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "post-create-project-cmd": [
+      "yarn install"
+    ],
+    "post-install-cmd": [
+      "yarn install"
+    ],
+    "stylelint": [
+      "stylelint './assets/scss/**/*.scss' --fix"
+    ],
+    "phpcs": [
+      "phpcs"
+    ]
+  }
+}
