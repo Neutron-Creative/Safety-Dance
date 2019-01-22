@@ -52,3 +52,48 @@ body.admin-bar {
         margin-right: 5px;
     }
 }
+
+// Add Sidebar
+body#page-id-16 {
+    main.content {
+        position: relative;
+        padding-left: 50px;
+    }
+    .sidebar {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        width: 135px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        li {
+            display: flex;
+            width: 100%;
+            height: 30px;
+            margin-bottom: 5px;
+            justify-content: center;
+            align-content: center;
+            background: #0094de; /* Old browsers */
+            background: -moz-linear-gradient(top, #0094de 0%, #000000 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #0094de 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #0094de 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0094de', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+            a {
+                width: 100%;
+                height: 100%;
+                line-height: 15px;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #FFFF00;
+                box-shadow: 2px 0 0 black;
+                box-sizing: border-box;
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+.sidebar {
+    display: none;
+}

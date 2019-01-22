@@ -232,10 +232,42 @@ $core_hero_section = [
 
 $core_hooks = [
 	Hooks::ADD    => [
+		// Inc 5000 Banner
 		[
-			Hooks::TAG      => 'genesis_before_header',
+			Hooks::TAG      => 'genesis_before_header', 
 			Hooks::CALLBACK => function ( ) {
 				echo '<div class="announcement-banner">Educated Design &amp; Development has been named an <img src="/wp-content/uploads/2019/01/inc-5000.png"/> company.</div>';
+			}
+		],
+		// Products Sidebar
+		[
+			Hooks::TAG      => 'genesis_entry_content',
+			Hooks::CALLBACK => function () {
+				echo '<ul class="sidebar">';
+					$taxonomy     = 'product_cat';
+					$orderby      = 'name';  
+					$show_count   = 0;      // 1 for yes, 0 for no
+					$pad_counts   = 0;      // 1 for yes, 0 for no
+					$hierarchical = 1;      // 1 for yes, 0 for no  
+					$title        = '';  
+					$empty        = 0;
+				
+					$args = array(
+						'taxonomy'     => $taxonomy,
+						'orderby'      => $orderby,
+						'show_count'   => $show_count,
+						'pad_counts'   => $pad_counts,
+						'hierarchical' => $hierarchical,
+						'title_li'     => $title,
+						'hide_empty'   => $empty
+					);
+					$all_categories = get_categories( $args );
+					foreach ($all_categories as $cat) {
+						if($cat->category_parent == 0) {
+							$category_id = $cat->term_id;       
+							echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a></li>'; 
+					}
+				echo '</ul>';
 			}
 		],
 		[

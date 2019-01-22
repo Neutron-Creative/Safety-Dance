@@ -682,6 +682,57 @@ body.admin-bar .announcement-banner {
 	margin-right: 5px;
 	}
 
+body#page-id-16 main.content {
+	padding-left: 50px;
+	position: relative;
+	}
+
+body#page-id-16 .sidebar {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	left: 10px;
+	position: absolute;
+	top: 20px;
+	width: 135px;
+	}
+
+body#page-id-16 .sidebar li {
+	background: #0094de;
+	/* Old browsers */
+	/* FF3.6-15 */
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #0094de 0%, #000 100%);
+	display: flex;
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0094de', endColorstr='#000000',GradientType=0 );
+	height: 30px;
+	margin-bottom: 5px;
+	width: 100%;
+
+	justify-content: center;
+	align-content: center;
+	/* IE6-9 */
+	}
+
+body#page-id-16 .sidebar li a {
+	box-shadow: 2px 0 0 black;
+	box-sizing: border-box;
+	color: #ff0;
+	font-size: 12px;
+	font-size: 1.2rem;
+	height: 100%;
+	line-height: 15px;
+	line-height: 1.5rem;
+	padding: 0 5px;
+	text-transform: uppercase;
+	width: 100%;
+	}
+
+.sidebar {
+	display: none;
+	}
+
 .site-header {
 	background-color: #ff0;
 	border-bottom: 0;
