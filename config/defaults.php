@@ -286,7 +286,7 @@ $core_hooks = [
 			}
 		],
 		// Products Category Archive
-		[
+		/*[
 			Hooks::TAG      => 'genesis_before_loop',
 			Hooks::CALLBACK => function () {
 				if(is_product_category()) {
@@ -295,7 +295,7 @@ $core_hooks = [
 					echo '<h1>not category</h1>';
 				}
 			}
-		],
+		],*/
 		[
 			Hooks::TAG      => 'template_include',
 			Hooks::CALLBACK => function ( $template ) {
