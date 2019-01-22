@@ -244,7 +244,7 @@ $core_hooks = [
 			Hooks::TAG      => 'genesis_entry_content',
 			Hooks::CALLBACK => function () {
 				echo '<ul class="sidebar">';
-
+					echo '<div class="bg-stripe"></div>';
 					echo '<div class="list-header">Product List</div>';
 
 					$taxonomy     = 'product_cat';

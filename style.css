@@ -682,6 +682,16 @@ body.admin-bar .announcement-banner {
 	margin-right: 5px;
 	}
 
+body.page-id-16 .bg-stripe {
+	background: red;
+	height: 100%;
+	left: 4px;
+	position: absolute;
+	top: 0;
+	width: 8px;
+	z-index: 1;
+	}
+
 body.page-id-16 main.content {
 	padding-left: 50px;
 	position: relative;
@@ -742,6 +752,7 @@ body.page-id-16 .sidebar li {
 	height: 25px;
 	margin-bottom: 4px;
 	width: 100%;
+	z-index: 9;
 
 	justify-content: center;
 	align-content: center;
@@ -770,7 +781,7 @@ body.page-id-16 .sidebar li a {
 	line-height: 13px;
 	line-height: 1.3rem;
 	max-height: 100%;
-	padding: 1px 5px;
+	padding: 0 2px;
 	text-align: center;
 	text-decoration: none !important;
 	text-shadow: 2px 0 0 black;
