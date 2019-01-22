@@ -287,7 +287,7 @@ $core_hooks = [
 		],
 		// Products Category Archive
 		[
-			Hooks::TAG      => 'genesis_entry_content',
+			Hooks::TAG      => 'genesis_before_content',
 			Hooks::CALLBACK => function () {
 				if(is_product_category()) {
 					echo '<h1>' . get_the_title . '</h1>';
