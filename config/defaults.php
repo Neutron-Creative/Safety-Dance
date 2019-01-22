@@ -244,6 +244,9 @@ $core_hooks = [
 			Hooks::TAG      => 'genesis_entry_content',
 			Hooks::CALLBACK => function () {
 				echo '<ul class="sidebar">';
+
+					echo '<div class="list-header">Product List</div>';
+
 					$taxonomy     = 'product_cat';
 					$orderby      = 'name';  
 					$show_count   = 0;      // 1 for yes, 0 for no
@@ -268,6 +271,9 @@ $core_hooks = [
 							echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a></li>'; 
 						}
 					}
+
+					echo '<div class="list-closer"></div>';
+
 				echo '</ul>';
 			}
 		],

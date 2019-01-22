@@ -697,6 +697,32 @@ body.page-id-16 .sidebar {
 	width: 135px;
 	}
 
+body.page-id-16 .sidebar .list-header {
+	background: #f00;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	display: flex;
+	height: 28px;
+	margin-bottom: 4px;
+	width: 100%;
+
+	justify-content: center;
+	align-items: center;
+	}
+
+body.page-id-16 .sidebar .list-closer {
+	background: #f00;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	display: flex;
+	height: 28px;
+	margin-bottom: 4px;
+	width: 100%;
+
+	justify-content: center;
+	align-items: center;
+	}
+
 body.page-id-16 .sidebar li {
 	background: #0094de;
 	/* Old browsers */
@@ -706,8 +732,8 @@ body.page-id-16 .sidebar li {
 	display: flex;
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0094de', endColorstr='#000000',GradientType=1 );
-	height: 30px;
-	margin-bottom: 5px;
+	height: 28px;
+	margin-bottom: 4px;
 	width: 100%;
 
 	justify-content: center;
@@ -739,6 +765,7 @@ body.page-id-16 .sidebar li a {
 	max-height: 100%;
 	padding: 1px 5px;
 	text-align: center;
+	text-decoration: none !important;
 	text-shadow: 2px 0 0 black;
 	text-transform: uppercase;
 	width: 100%;
