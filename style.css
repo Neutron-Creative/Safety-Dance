@@ -694,7 +694,7 @@ body.page-id-16 .sidebar {
 	left: -90px;
 	position: absolute;
 	top: -30px;
-	width: 135px;
+	width: 120px;
 	}
 
 body.page-id-16 .sidebar .list-header {
@@ -739,7 +739,7 @@ body.page-id-16 .sidebar li {
 	display: flex;
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0094de', endColorstr='#000000',GradientType=1 );
-	height: 28px;
+	height: 25px;
 	margin-bottom: 4px;
 	width: 100%;
 
