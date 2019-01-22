@@ -266,6 +266,7 @@ $core_hooks = [
 						if($cat->category_parent == 0) {
 							$category_id = $cat->term_id;       
 							echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a></li>'; 
+						}
 					}
 				echo '</ul>';
 			}
