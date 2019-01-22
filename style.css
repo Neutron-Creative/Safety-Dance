@@ -702,10 +702,10 @@ body.page-id-16 .sidebar li {
 	/* Old browsers */
 	/* FF3.6-15 */
 	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #0094de 0%, #000 100%);
+	background: linear-gradient(to right, #0094de 0%, #000 100%);
 	display: flex;
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0094de', endColorstr='#000000',GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0094de', endColorstr='#000000',GradientType=1 );
 	height: 30px;
 	margin-bottom: 5px;
 	width: 100%;
@@ -715,9 +715,21 @@ body.page-id-16 .sidebar li {
 	/* IE6-9 */
 	}
 
+body.page-id-16 .sidebar li:hover {
+	background: #000;
+	/* Old browsers */
+	/* FF3.6-15 */
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #000 0%, #0094de 99%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0094de',GradientType=1 );
+	/* IE6-9 */
+	}
+
 body.page-id-16 .sidebar li a {
 	box-sizing: border-box;
 	color: #ff0;
+	display: flex;
 	font-size: 10px;
 	font-size: 1rem;
 	font-weight: 700;
@@ -730,6 +742,9 @@ body.page-id-16 .sidebar li a {
 	text-shadow: 2px 0 0 black;
 	text-transform: uppercase;
 	width: 100%;
+
+	justify-content: center;
+	align-items: center;
 	}
 
 .sidebar {
