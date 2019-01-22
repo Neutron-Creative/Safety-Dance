@@ -701,9 +701,14 @@ body.page-id-16 .sidebar .list-header {
 	background: #f00;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
+	color: white;
 	display: flex;
-	height: 28px;
-	margin-bottom: 4px;
+	font-size: 12px;
+	font-size: 1.2rem;
+	font-weight: 700;
+	height: 25px;
+	margin-bottom: 2px;
+	text-transform: uppercase;
 	width: 100%;
 
 	justify-content: center;
@@ -715,8 +720,7 @@ body.page-id-16 .sidebar .list-closer {
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
 	display: flex;
-	height: 28px;
-	margin-bottom: 4px;
+	height: 25px;
 	width: 100%;
 
 	justify-content: center;
