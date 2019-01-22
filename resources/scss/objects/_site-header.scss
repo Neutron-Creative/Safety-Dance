@@ -35,6 +35,8 @@
 			li {
 				padding: 0 !important;
 				margin: 0 5px;
+				border: none !important; 
+				outline: none !important;
 				a {
 					color: #0094DE !important;
 					font-size: 20px !important;
@@ -47,6 +49,8 @@
 					background-repeat: no-repeat !important;
 					padding-left: 20px !important;
 					box-sizing: border-box !important;
+					border: none !important; 
+					outline: none !important;
 					&:hover {
 						color: #000 !important;
 						background-image: url('/wp-content/uploads/2019/01/lightning-blue.png') !important;

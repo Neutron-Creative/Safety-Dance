@@ -859,7 +859,9 @@ body.page-id-16 .category-list li a {
 	}
 
 .site-header .wrap ul li {
+	border: none !important;
 	margin: 0 5px;
+	outline: none !important;
 	padding: 0 !important;
 	}
 
@@ -868,11 +870,13 @@ body.page-id-16 .category-list li a {
 	background-position: left center !important;
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
+	border: none !important;
 	box-sizing: border-box !important;
 	color: #0094de !important;
 	font-size: 20px !important;
 	font-size: 2rem !important;
 	font-weight: bold !important;
+	outline: none !important;
 	padding-left: 20px !important;
 	text-decoration: none !important;
 	text-transform: capitalize !important;
