@@ -714,6 +714,18 @@ body.page-id-16 .sidebar form input {
 	width: 100% !important;
 	}
 
+body.page-id-16 .sidebar form input[type="submit"] {
+	background: #fff !important;
+	border-color: #d8d8d8 #d1d1d1 #bababa !important;
+	border-style: solid;
+	border-width: 1px;
+	color: black;
+	font-size: 12px;
+	font-size: 1.2rem;
+	font-weight: normal;
+	padding: 1px 7px 2px;
+	}
+
 body.page-id-16 .category-list {
 	display: flex;
 	flex-direction: column;
@@ -765,8 +777,8 @@ body.page-id-16 .category-list li {
 	display: flex;
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0094de', endColorstr='#000000',GradientType=1 );
-	height: 25px;
-	margin-bottom: 4px;
+	height: 24px;
+	margin-bottom: 3px;
 	width: 100%;
 	z-index: 9;
 
