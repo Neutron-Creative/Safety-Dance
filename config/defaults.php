@@ -243,6 +243,13 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'genesis_entry_content',
 			Hooks::CALLBACK => function () {
+				
+
+				echo '<form action="/" method="get" class="search-form">';
+					echo '<input type="text" name="s" id="search" value="' . the_search_query() . '">';
+					echo '<input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />';
+				echo '</form>';
+				
 				echo '<ul class="sidebar">';
 					echo '<div class="bg-stripe"></div>';
 					echo '<div class="list-header">Product List</div>';
