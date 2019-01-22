@@ -290,7 +290,7 @@ $core_hooks = [
 			Hooks::TAG      => 'genesis_before_loop',
 			Hooks::CALLBACK => function () {
 				if(is_product_category()) {
-					echo '<h1>' . get_the_title() . ' yeee</h1>';
+					echo '<h1>is a catergory</h1>';
 				} else {
 					echo '<h1>not category</h1>';
 				}
