@@ -701,13 +701,15 @@ body.page-id-16 .sidebar .list-header {
 	background: #f00;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25);
 	color: white;
 	display: flex;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 700;
-	height: 25px;
+	height: 22px;
 	margin-bottom: 2px;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
 	text-transform: uppercase;
 	width: 100%;
 
@@ -719,8 +721,9 @@ body.page-id-16 .sidebar .list-closer {
 	background: #f00;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25);
 	display: flex;
-	height: 25px;
+	height: 22px;
 	width: 100%;
 
 	justify-content: center;
