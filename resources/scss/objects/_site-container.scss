@@ -76,6 +76,13 @@ body.page-id-16 {
         height: auto;
         display: flex;
         flex-direction: column;
+        form {
+            input {
+                display: block;
+                width: 100% !important;
+                height: 20px !important;
+            }
+        }
     }
     .category-list {
         height: auto;
