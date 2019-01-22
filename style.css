@@ -710,6 +710,7 @@ body.page-id-16 .sidebar {
 body.page-id-16 .sidebar form input {
 	display: block;
 	height: 20px !important;
+	padding: 0 !important;
 	width: 100% !important;
 	}
 

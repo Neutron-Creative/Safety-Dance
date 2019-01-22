@@ -247,7 +247,7 @@ $core_hooks = [
 				echo '<div class="sidebar">';
 					echo '<form action="/" method="get" class="search-form">';
 						echo '<input type="text" name="s" id="search" value="' . the_search_query() . '">';
-						echo '<input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />';
+						echo '<input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search!' ) .'" />';
 					echo '</form>';
 					
 					echo '<ul class="category-list">';
