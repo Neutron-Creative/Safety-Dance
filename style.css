@@ -707,6 +707,10 @@ body.page-id-16 .sidebar {
 	width: 120px;
 	}
 
+body.page-id-16 .sidebar form {
+	margin-bottom: 0;
+	}
+
 body.page-id-16 .sidebar form input {
 	display: block;
 	height: 20px !important;
