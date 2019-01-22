@@ -285,6 +285,15 @@ $core_hooks = [
 				echo '</div>';
 			}
 		],
+		// Products Category Archive
+		[
+			Hooks::TAG      => 'genesis_entry_content',
+			Hooks::CALLBACK => function () {
+				if(is_product_category()) {
+					echo '<h1>' . get_the_title . '</h1>';
+				}
+			}
+		],
 		[
 			Hooks::TAG      => 'template_include',
 			Hooks::CALLBACK => function ( $template ) {
