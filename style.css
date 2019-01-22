@@ -702,7 +702,7 @@ body.page-id-16 .sidebar {
 	flex-direction: column;
 	height: auto;
 	left: -90px;
-	position: absolute;
+	position: relative;
 	top: -30px;
 	width: 120px;
 	}
