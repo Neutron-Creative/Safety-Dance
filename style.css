@@ -856,13 +856,19 @@ body.page-id-16 .category-list li a {
 
 .site-header .wrap ul {
 	background: none !important;
+	height: 100%;
 	}
 
 .site-header .wrap ul li {
 	border: none !important;
+	display: flex;
+	height: 100%;
 	margin: 0 5px;
 	outline: none !important;
 	padding: 0 !important;
+
+	justify-content: center;
+	align-items: center;
 	}
 
 .site-header .wrap ul li a {
