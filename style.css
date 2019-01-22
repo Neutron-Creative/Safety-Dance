@@ -682,12 +682,12 @@ body.admin-bar .announcement-banner {
 	margin-right: 5px;
 	}
 
-body#page-id-16 main.content {
+body.page-id-16 main.content {
 	padding-left: 50px;
 	position: relative;
 	}
 
-body#page-id-16 .sidebar {
+body.page-id-16 .sidebar {
 	display: flex;
 	flex-direction: column;
 	height: auto;
@@ -697,7 +697,7 @@ body#page-id-16 .sidebar {
 	width: 135px;
 	}
 
-body#page-id-16 .sidebar li {
+body.page-id-16 .sidebar li {
 	background: #0094de;
 	/* Old browsers */
 	/* FF3.6-15 */
@@ -715,7 +715,7 @@ body#page-id-16 .sidebar li {
 	/* IE6-9 */
 	}
 
-body#page-id-16 .sidebar li a {
+body.page-id-16 .sidebar li a {
 	box-shadow: 2px 0 0 black;
 	box-sizing: border-box;
 	color: #ff0;
