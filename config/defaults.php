@@ -291,6 +291,8 @@ $core_hooks = [
 			Hooks::CALLBACK => function () {
 				if(is_product_category()) {
 					echo '<h1>' . get_the_title . '</h1>';
+				} else {
+					echo '<h1>not category</h1>';
 				}
 			}
 		],
