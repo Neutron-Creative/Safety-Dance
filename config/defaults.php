@@ -244,44 +244,45 @@ $core_hooks = [
 			Hooks::TAG      => 'genesis_entry_content',
 			Hooks::CALLBACK => function () {
 				
+				echo '<div class="sidebar">';
+					echo '<form action="/" method="get" class="search-form">';
+						echo '<input type="text" name="s" id="search" value="' . the_search_query() . '">';
+						echo '<input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />';
+					echo '</form>';
+					
+					echo '<ul class="category-list">';
+						echo '<div class="bg-stripe"></div>';
+						echo '<div class="list-header">Product List</div>';
 
-				echo '<form action="/" method="get" class="search-form">';
-					echo '<input type="text" name="s" id="search" value="' . the_search_query() . '">';
-					echo '<input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />';
-				echo '</form>';
-				
-				echo '<ul class="sidebar">';
-					echo '<div class="bg-stripe"></div>';
-					echo '<div class="list-header">Product List</div>';
-
-					$taxonomy     = 'product_cat';
-					$orderby      = 'name';  
-					$show_count   = 0;      // 1 for yes, 0 for no
-					$pad_counts   = 0;      // 1 for yes, 0 for no
-					$hierarchical = 1;      // 1 for yes, 0 for no  
-					$title        = '';  
-					$empty        = 0;
-				
-					$args = array(
-						'taxonomy'     => $taxonomy,
-						'orderby'      => $orderby,
-						'show_count'   => $show_count,
-						'pad_counts'   => $pad_counts,
-						'hierarchical' => $hierarchical,
-						'title_li'     => $title,
-						'hide_empty'   => $empty
-					);
-					$all_categories = get_categories( $args );
-					foreach ($all_categories as $cat) {
-						if($cat->category_parent == 0) {
-							$category_id = $cat->term_id;       
-							echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a></li>'; 
+						$taxonomy     = 'product_cat';
+						$orderby      = 'name';  
+						$show_count   = 0;      // 1 for yes, 0 for no
+						$pad_counts   = 0;      // 1 for yes, 0 for no
+						$hierarchical = 1;      // 1 for yes, 0 for no  
+						$title        = '';  
+						$empty        = 0;
+					
+						$args = array(
+							'taxonomy'     => $taxonomy,
+							'orderby'      => $orderby,
+							'show_count'   => $show_count,
+							'pad_counts'   => $pad_counts,
+							'hierarchical' => $hierarchical,
+							'title_li'     => $title,
+							'hide_empty'   => $empty
+						);
+						$all_categories = get_categories( $args );
+						foreach ($all_categories as $cat) {
+							if($cat->category_parent == 0) {
+								$category_id = $cat->term_id;       
+								echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a></li>'; 
+							}
 						}
-					}
 
-					echo '<div class="list-closer"></div>';
+						echo '<div class="list-closer"></div>';
 
-				echo '</ul>';
+					echo '</ul>';
+				echo '</div>';
 			}
 		],
 		[
