@@ -304,8 +304,14 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'woocommerce_after_main_content',
 			Hooks::CALLBACK => function() {
-				
-				echo "<h1>BUG TEST</h1>";
+				echo "<main class='content product-archive' style='max-width: none !important;padding-left: 95px !important;'><div class='wrap'>";
+				$args = array(
+					'status' => 'publish',
+				);
+				$products = wc_get_products( $args );
+				echo "<h1> products </h1>";
+				print_r($products);
+				echo "</div></main>";
 			}
 		],
 		// Products Sidebar
