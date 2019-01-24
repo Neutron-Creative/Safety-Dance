@@ -239,6 +239,27 @@ $core_hooks = [
 				echo '<div class="announcement-banner">Educated Design &amp; Development has been named an <img src="/wp-content/uploads/2019/01/inc-5000.png"/> company.</div>';
 			}
 		],
+		// Products Category Archive
+		/*[
+			Hooks::TAG      => 'genesis_before_loop',
+			Hooks::CALLBACK => function () {
+				if(is_product_category()) {
+					echo '<h1>is a catergory</h1>';
+				} else {
+					echo '<h1>not category</h1>';
+				}
+			}
+		],*/
+		// Products Archive Attempt 2
+		[
+			Hooks::TAG      => 'woocommerce_archive_description',
+			Hooks::CALLBACK => function() {
+				echo "</header><main class='content' style='max-width: none !important;'><div class='wrap'>";
+					echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
+					echo "<p>" . get_the_archive_description() . "</p>";
+				echo "</div></main><header>";
+			}
+		],
 		// Products Sidebar
 		[
 			Hooks::TAG      => 'genesis_entry_content',
@@ -285,25 +306,50 @@ $core_hooks = [
 				echo '</div>';
 			}
 		],
-		// Products Category Archive
-		/*[
-			Hooks::TAG      => 'genesis_before_loop',
-			Hooks::CALLBACK => function () {
-				if(is_product_category()) {
-					echo '<h1>is a catergory</h1>';
-				} else {
-					echo '<h1>not category</h1>';
-				}
-			}
-		],*/
-		// Products Archive Attempt 2
+		// Products Sidebar
 		[
-			Hooks::TAG      => 'woocommerce_archive_description',
-			Hooks::CALLBACK => function() {
-				echo "</header><main class='content' style='max-width: none !important;'><div class='wrap'>";
-					echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
-					echo "<p>" . get_the_archive_description() . "</p>";
-				echo "</div></main><header>";
+			Hooks::TAG      => 'genesis_archive_description',
+			Hooks::CALLBACK => function () {
+				
+				echo '<div class="sidebar">';
+					echo '<form action="/" method="get" class="search-form">';
+						echo '<input type="text" name="s" id="search" value="' . the_search_query() . '">';
+						echo '<input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search!' ) .'" />';
+					echo '</form>';
+					
+					echo '<ul class="category-list">';
+						echo '<div class="bg-stripe"></div>';
+						echo '<div class="list-header">Product List</div>';
+
+						$taxonomy     = 'product_cat';
+						$orderby      = 'name';  
+						$show_count   = 0;      // 1 for yes, 0 for no
+						$pad_counts   = 0;      // 1 for yes, 0 for no
+						$hierarchical = 1;      // 1 for yes, 0 for no  
+						$title        = '';  
+						$empty        = 0;
+					
+						$args = array(
+							'taxonomy'     => $taxonomy,
+							'orderby'      => $orderby,
+							'show_count'   => $show_count,
+							'pad_counts'   => $pad_counts,
+							'hierarchical' => $hierarchical,
+							'title_li'     => $title,
+							'hide_empty'   => $empty
+						);
+						$all_categories = get_categories( $args );
+						foreach ($all_categories as $cat) {
+							if($cat->category_parent == 0) {
+								$category_id = $cat->term_id;       
+								echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a></li>'; 
+							}
+						}
+
+						echo '<div class="list-closer"></div>';
+
+					echo '</ul>';
+				echo '</div>';
 			}
 		],
 		[
