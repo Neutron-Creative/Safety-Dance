@@ -305,8 +305,11 @@ $core_hooks = [
 			Hooks::TAG      => 'woocommerce_after_main_content',
 			Hooks::CALLBACK => function() {
 				echo "<main class='content product-archive' style='max-width: none !important;padding-left: 95px !important;'><div class='wrap'>";
+				$cate = get_queried_object();
+				$cateID = $cate->term_id;
 				$args = array(
 					'status' => 'publish',
+					'category' => $cateID
 				);
 				$products = wc_get_products( $args );
 				foreach($products as $product) {
