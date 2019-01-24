@@ -254,17 +254,13 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'woocommerce_before_main_content',
 			Hooks::CALLBACK => function() {
-				echo "</header><main class='content' style='max-width: none !important;'><div class='wrap'>";
+				echo "</header><main class='content product-archive' style='max-width: none !important;'><div class='wrap'>";
 					echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
 					echo "<p>" . get_the_archive_description() . "</p>";
 				echo "</div></main><header>";
-			}
-		],
-		// Products Sidebar
-		[
-			Hooks::TAG      => 'genesis_entry_content',
-			Hooks::CALLBACK => function () {
-				
+
+
+				// Add Sidebar
 				echo '<div class="sidebar">';
 					echo '<form action="/" method="get" class="search-form">';
 						echo '<input type="text" name="s" id="search" value="' . the_search_query() . '">';
@@ -308,7 +304,7 @@ $core_hooks = [
 		],
 		// Products Sidebar
 		[
-			Hooks::TAG      => 'genesis_archive_description',
+			Hooks::TAG      => 'genesis_entry_content',
 			Hooks::CALLBACK => function () {
 				
 				echo '<div class="sidebar">';
