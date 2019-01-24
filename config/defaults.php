@@ -296,6 +296,13 @@ $core_hooks = [
 				}
 			}
 		],*/
+		// Products Archive Attempt 2
+		[
+			Hooks::TAG      => 'woocommerce_after_shop_loop',
+			Hooks::CALLBACK => function() {
+				echo "<h1>Hello shop</h1>";
+			}
+		],
 		[
 			Hooks::TAG      => 'template_include',
 			Hooks::CALLBACK => function ( $template ) {
