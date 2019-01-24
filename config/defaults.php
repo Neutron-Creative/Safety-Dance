@@ -304,18 +304,8 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'woocommerce_after_main_content',
 			Hooks::CALLBACK => function() {
-				$args = array( 'post_type' => 'product', 'posts_per_page' => 10, 'orderby' => 'rand' );
-
-				$loop = new WP_Query( $args );
-				echo "<ul class='mylisting'>";
-				while ( $loop->have_posts() ) : $loop->the_post(); 
-				global $product; 
-
-				echo '<li><a href="'.get_permalink().'">'.get_the_post_thumbnail($loop->post->ID, 'thumbnail').'</a></li>';
-
-				endwhile; 
-
-				echo "</ul>";
+				
+				echo "<h1>BUG TEST</h1>";
 			}
 		],
 		// Products Sidebar
