@@ -309,7 +309,9 @@ $core_hooks = [
 				$cateID = $cate->term_id;
 				$args = array(
 					'status' => 'publish',
-					'category' => array( sanitize_title_with_dashes( substr(get_the_archive_title(), 10) ) )
+					'category' => array( sanitize_title_with_dashes( substr(get_the_archive_title(), 10) ) ),
+					'orderby' => 'menu_order',
+					'order' => 'ASC'
 				);
 				$products = wc_get_products( $args );
 				foreach($products as $product) {
