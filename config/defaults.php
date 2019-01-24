@@ -302,7 +302,7 @@ $core_hooks = [
 			Hooks::CALLBACK => function() {
 				echo "</header><div class='wrap'>";
 					echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
-					echo "<p>Lorem Ipsum!</p>";
+					echo "<p>" . get_the_archive_description() . "</p>";
 				echo "</div><header>";
 			}
 		],
