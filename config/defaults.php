@@ -316,8 +316,6 @@ $core_hooks = [
 							$product->get_image_id();
 							get_the_post_thumbnail_url( $product->get_id(), 'full' );
 							$product->get_gallery_image_ids();
-						echo '</div>';
-						echo '<div class="product-content">';
 							echo "<p>" . $product->get_description() . "</p>";
 						echo '</div>';
 					echo "</div>";

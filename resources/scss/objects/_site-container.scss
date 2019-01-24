@@ -208,4 +208,9 @@ main.product-archive {
     .wrap {
         flex-direction: column !important;
     }
+
+    .product-in-loop-wc {
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -860,6 +860,11 @@ main.product-archive .wrap {
 	flex-direction: column !important;
 	}
 
+main.product-archive .product-in-loop-wc {
+	display: flex;
+	flex-direction: column;
+	}
+
 .site-header {
 	background-color: #ff0;
 	border-bottom: 0;
