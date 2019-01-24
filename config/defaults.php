@@ -310,7 +310,9 @@ $core_hooks = [
 				);
 				$products = wc_get_products( $args );
 				for($i = 0; $i<count($products); $i++) {
-					print_r($products[0]);
+					//print_r($products[$i]);
+					echo "<h1>" . $products[$i][name] . "</h1>";
+					echo $products[$i];
 					
 				}
 				//print_r($products);
