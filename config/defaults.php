@@ -304,11 +304,9 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'woocommerce_after_main_content',
 			Hooks::CALLBACK => function() {
-				$args = array( 'post_type' => 'product', 'posts_per_page' => 10, 'product_cat' => $atts[0], 'orderby' => 'rand' );
+				$args = array( 'post_type' => 'product', 'posts_per_page' => 10, 'orderby' => 'rand' );
 
 				$loop = new WP_Query( $args );
-
-				echo '<h1 class="upp">Style '.$atts[0].'</h1>';
 				echo "<ul class='mylisting'>";
 				while ( $loop->have_posts() ) : $loop->the_post(); 
 				global $product; 
