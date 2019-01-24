@@ -200,3 +200,9 @@ form.woocommerce-ordering {
 p.woocommerce-info {
     display: none !important;
 }
+
+main.product-archive {
+    .wrap {
+        flex-direction: column !important;
+    }
+}
