@@ -866,8 +866,9 @@ main.product-archive .product-in-loop-wc {
 	}
 
 main.product-archive .product-in-loop-wc h3 {
+	color: #000 !important;
 	display: block !important;
-	font-family: Arial Black, Gadget, sans-serif !important;
+	font-family: Arial, Gadget, sans-serif !important;
 	font-size: 18px !important;
 	font-size: 1.8rem !important;
 	font-style: italic !important;
