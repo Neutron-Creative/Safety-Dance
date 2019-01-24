@@ -865,6 +865,21 @@ main.product-archive .product-in-loop-wc {
 	flex-direction: column;
 	}
 
+main.product-archive .product-in-loop-wc h3 {
+	display: block !important;
+	font-family: Arial Black, Gadget, sans-serif !important;
+	font-size: 18px !important;
+	font-size: 1.8rem !important;
+	font-style: italic !important;
+	margin-top: 0 !important;
+	text-shadow: 2px 3px 5px #333 !important;
+	}
+
+main.product-archive .product-in-loop-wc .product-content {
+	display: flex;
+	flex-direction: row;
+	}
+
 .site-header {
 	background-color: #ff0;
 	border-bottom: 0;

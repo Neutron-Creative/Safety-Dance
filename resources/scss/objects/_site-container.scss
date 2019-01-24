@@ -212,5 +212,17 @@ main.product-archive {
     .product-in-loop-wc {
         display: flex;
         flex-direction: column;
+        h3 {
+            display: block !important;
+            font-style: italic !important;
+            font-size: 18px !important;
+            font-family: Arial Black, Gadget, sans-serif !important;
+            text-shadow: 2px 3px 5px #333 !important;
+            margin-top: 0px !important;
+        }
+        .product-content {
+            display: flex;
+            flex-direction: row;
+        }
     }
 }
