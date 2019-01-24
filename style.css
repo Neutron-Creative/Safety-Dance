@@ -880,6 +880,17 @@ main.product-archive .product-in-loop-wc .product-content {
 	flex-direction: row;
 	}
 
+main.product-archive .product-in-loop-wc .product-content .product-details {
+	height: auto;
+	width: 50%;
+	}
+
+main.product-archive .product-in-loop-wc .product-content .product-details .thumbnail {
+	display: block;
+	max-width: 150px;
+	width: 100%;
+	}
+
 .site-header {
 	background-color: #ff0;
 	border-bottom: 0;

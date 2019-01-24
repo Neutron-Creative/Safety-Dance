@@ -223,6 +223,15 @@ main.product-archive {
         .product-content {
             display: flex;
             flex-direction: row;
+            .product-details {
+                width: 50%;
+                height: auto;
+                .thumbnail {
+                    display: block;
+                    width: 100%;
+                    max-width: 150px;
+                }
+            }
         }
     }
 }
