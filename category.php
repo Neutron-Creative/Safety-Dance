@@ -43,6 +43,9 @@ add_action( 'genesis_loop', __NAMESPACE__ . '\full_page_loop' );
  *
  * @return void
  */
+
+ echo '<h1>Category Archive!</h1>';
+ 
 function full_page_loop() {
 	if ( have_posts() ) :
 		the_post();
