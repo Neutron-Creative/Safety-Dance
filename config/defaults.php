@@ -298,7 +298,7 @@ $core_hooks = [
 		],*/
 		// Products Archive Attempt 2
 		[
-			Hooks::TAG      => 'woocommerce_after_shop_loop',
+			Hooks::TAG      => 'woocommerce_archive_description',
 			Hooks::CALLBACK => function() {
 				echo "<h1>Hello shop</h1>";
 			}
