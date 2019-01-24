@@ -309,7 +309,7 @@ $core_hooks = [
 					'status' => 'publish',
 				);
 				$products = wc_get_products( $args );
-				for($products as $product) {
+				foreach($products as $product) {
 					echo "<h1>Product</h1>";
 					print_r($product);
 				}
