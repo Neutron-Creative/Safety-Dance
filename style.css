@@ -682,7 +682,7 @@ body.admin-bar .announcement-banner {
 	margin-right: 5px;
 	}
 
-body.page-id-16 .bg-stripe {
+body.page-id-16 .bg-stripe, body.tax-product_cat .bg-stripe {
 	background: red;
 	height: 100%;
 	left: 4px;
@@ -692,12 +692,12 @@ body.page-id-16 .bg-stripe {
 	z-index: 1;
 	}
 
-body.page-id-16 main.content {
+body.page-id-16 main.content, body.tax-product_cat main.content {
 	padding-left: 50px;
 	position: relative;
 	}
 
-body.page-id-16 .sidebar {
+body.page-id-16 .sidebar, body.tax-product_cat .sidebar {
 	display: flex;
 	flex-direction: column;
 	height: auto;
@@ -707,18 +707,18 @@ body.page-id-16 .sidebar {
 	width: 120px;
 	}
 
-body.page-id-16 .sidebar form {
+body.page-id-16 .sidebar form, body.tax-product_cat .sidebar form {
 	margin-bottom: 0;
 	}
 
-body.page-id-16 .sidebar form input {
+body.page-id-16 .sidebar form input, body.tax-product_cat .sidebar form input {
 	display: block;
 	height: 20px !important;
 	padding: 0 !important;
 	width: 100% !important;
 	}
 
-body.page-id-16 .sidebar form input[type="submit"] {
+body.page-id-16 .sidebar form input[type="submit"], body.tax-product_cat .sidebar form input[type="submit"] {
 	background: #fff !important;
 	border-color: #d8d8d8 #d1d1d1 #bababa !important;
 	border-style: solid;
@@ -730,14 +730,14 @@ body.page-id-16 .sidebar form input[type="submit"] {
 	padding: 1px 7px 2px;
 	}
 
-body.page-id-16 .category-list {
+body.page-id-16 .category-list, body.tax-product_cat .category-list {
 	display: flex;
 	flex-direction: column;
 	height: auto;
 	position: relative;
 	}
 
-body.page-id-16 .category-list .list-header {
+body.page-id-16 .category-list .list-header, body.tax-product_cat .category-list .list-header {
 	background: #f00;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
@@ -758,7 +758,7 @@ body.page-id-16 .category-list .list-header {
 	align-items: center;
 	}
 
-body.page-id-16 .category-list .list-closer {
+body.page-id-16 .category-list .list-closer, body.tax-product_cat .category-list .list-closer {
 	background: #f00;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
@@ -772,7 +772,7 @@ body.page-id-16 .category-list .list-closer {
 	align-items: center;
 	}
 
-body.page-id-16 .category-list li {
+body.page-id-16 .category-list li, body.tax-product_cat .category-list li {
 	background: #0094de;
 	/* Old browsers */
 	/* FF3.6-15 */
@@ -791,7 +791,7 @@ body.page-id-16 .category-list li {
 	/* IE6-9 */
 	}
 
-body.page-id-16 .category-list li:hover {
+body.page-id-16 .category-list li:hover, body.tax-product_cat .category-list li:hover {
 	background: #000;
 	/* Old browsers */
 	/* FF3.6-15 */
@@ -802,7 +802,7 @@ body.page-id-16 .category-list li:hover {
 	/* IE6-9 */
 	}
 
-body.page-id-16 .category-list li a {
+body.page-id-16 .category-list li a, body.tax-product_cat .category-list li a {
 	box-sizing: border-box;
 	color: #ff0;
 	display: flex;
