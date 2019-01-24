@@ -861,11 +861,18 @@ main.product-archive .wrap {
 	}
 
 main.product-archive .product-in-loop-wc {
+	border: none !important;
+	margin-bottom: 20px !important;
+	outline: none !important;
+	text-decoration: none !important;
+	}
+
+main.product-archive .product-in-loop-wc div {
 	display: flex;
 	flex-direction: column;
 	}
 
-main.product-archive .product-in-loop-wc h3 {
+main.product-archive .product-in-loop-wc div h3 {
 	color: #000 !important;
 	display: block !important;
 	font-family: Arial, Gadget, sans-serif !important;
@@ -876,22 +883,22 @@ main.product-archive .product-in-loop-wc h3 {
 	text-shadow: 2px 3px 5px #333 !important;
 	}
 
-main.product-archive .product-in-loop-wc .product-content {
+main.product-archive .product-in-loop-wc div .product-content {
 	display: flex;
 	flex-direction: row;
 	}
 
-main.product-archive .product-in-loop-wc .product-content .product-details {
+main.product-archive .product-in-loop-wc div .product-content .product-details {
 	height: auto;
 	width: 50%;
 	}
 
-main.product-archive .product-in-loop-wc .product-content .product-details * {
+main.product-archive .product-in-loop-wc div .product-content .product-details * {
 	font-size: 14px !important;
 	font-size: 1.4rem !important;
 	}
 
-main.product-archive .product-in-loop-wc .product-content .product-details .thumbnail {
+main.product-archive .product-in-loop-wc div .product-content .product-details .thumbnail {
 	display: block;
 	max-width: 150px;
 	width: 100%;
