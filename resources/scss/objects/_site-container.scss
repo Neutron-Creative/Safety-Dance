@@ -70,8 +70,8 @@ body.page-id-16, body.tax-product_cat {
         z-index: 1;
     }
     main.content {
-        position: relative;
-        padding-left: 50px;
+        position: relative !important;
+        padding-left: 50px !important;
     }
     aside.sidebar, aside {
         display: none !important;

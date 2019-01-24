@@ -697,8 +697,8 @@ body.page-id-16 .bg-stripe, body.tax-product_cat .bg-stripe {
 	}
 
 body.page-id-16 main.content, body.tax-product_cat main.content {
-	padding-left: 50px;
-	position: relative;
+	padding-left: 50px !important;
+	position: relative !important;
 	}
 
 body.page-id-16 aside.sidebar, body.page-id-16 aside, body.tax-product_cat aside.sidebar, body.tax-product_cat aside {
