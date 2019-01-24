@@ -184,3 +184,15 @@ body.page-id-16, body.tax-product_cat {
 .sidebar {
     display: none;
 }
+
+.woocommerce-products-header {
+    display: none !important;
+}
+
+ul.products {
+    display: none !important;
+}
+
+form.woocommerce-ordering {
+    display: none !important;
+}

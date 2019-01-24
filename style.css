@@ -836,6 +836,18 @@ body.page-id-16 .category-list li a, body.tax-product_cat .category-list li a {
 	display: none;
 	}
 
+.woocommerce-products-header {
+	display: none !important;
+	}
+
+ul.products {
+	display: none !important;
+	}
+
+form.woocommerce-ordering {
+	display: none !important;
+	}
+
 .site-header {
 	background-color: #ff0;
 	border-bottom: 0;
