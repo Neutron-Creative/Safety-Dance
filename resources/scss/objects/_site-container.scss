@@ -227,6 +227,9 @@ main.product-archive {
             .product-details {
                 width: 50%;
                 height: auto;
+                * {
+                    font-size: 14px !important;
+                }
                 .thumbnail {
                     display: block;
                     width: 100%;

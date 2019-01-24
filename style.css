@@ -886,6 +886,11 @@ main.product-archive .product-in-loop-wc .product-content .product-details {
 	width: 50%;
 	}
 
+main.product-archive .product-in-loop-wc .product-content .product-details * {
+	font-size: 14px !important;
+	font-size: 1.4rem !important;
+	}
+
 main.product-archive .product-in-loop-wc .product-content .product-details .thumbnail {
 	display: block;
 	max-width: 150px;
