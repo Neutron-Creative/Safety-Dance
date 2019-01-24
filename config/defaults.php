@@ -309,6 +309,7 @@ $core_hooks = [
 				$cateID = $cate->term_id;
 				$args = array(
 					'status' => 'publish',
+					'category' => array( $wp_query->get_queried_object()->term_id )
 				);
 				$products = wc_get_products( $args );
 				foreach($products as $product) {
