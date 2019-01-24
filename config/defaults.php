@@ -257,20 +257,6 @@ $core_hooks = [
 				echo "</header><main class='content product-archive' style='max-width: none !important;padding-left: 95px !important;'><div class='wrap'>";
 					echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
 					echo "<p>" . get_the_archive_description() . "</p>";
-					
-					// Product Loop
-						$args = array(
-							'post_type' => 'product',
-							'posts_per_page' => 12
-							);
-						$loop = new WP_Query( $args );
-						if ( $loop->have_posts() ) {
-							while ( $loop->have_posts() ) : $loop->the_post();
-								wc_get_template_part( 'content', 'product' );
-							endwhile;
-						} else {
-							echo __( 'No products found' );
-						}
 
 					// Sidebar
 						echo '<div class="sidebar" style="left: -44px !important;">';
