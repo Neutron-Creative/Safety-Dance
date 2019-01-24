@@ -311,7 +311,7 @@ $core_hooks = [
 				$products = wc_get_products( $args );
 				foreach($products as $product) {
 					echo "<h1>Product</h1>";
-					echo $product->post->post_title;
+					echo $product->get_the_title();
 					print_r($product);
 				}
 				//print_r($products);
