@@ -260,19 +260,18 @@ $core_hooks = [
 					
 					// Product Loop
 						$args = array(
-							'post_type'      => 'product',
-							'posts_per_page' => 10,
-							'product_cat'    => $wp_query->get_queried_object()->name
-						);
-					
+							'post_type' => 'product',
+							'posts_per_page' => 12
+							);
 						$loop = new WP_Query( $args );
-					
-						while ( $loop->have_posts() ) : $loop->the_post();
-							global $product;
-							echo '<br /><a href="'.get_permalink().'">' . woocommerce_get_product_thumbnail().' '.get_the_title().'</a>';
-						endwhile;
-					
-						wp_reset_query();
+						if ( $loop->have_posts() ) {
+							while ( $loop->have_posts() ) : $loop->the_post();
+								wc_get_template_part( 'content', 'product' );
+							endwhile;
+						} else {
+							echo __( 'No products found' );
+						}
+						wp_reset_postdata();
 
 					// Sidebar
 						echo '<div class="sidebar" style="left: -44px !important;">';
