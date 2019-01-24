@@ -309,7 +309,7 @@ $core_hooks = [
 				$cateID = $cate->term_id;
 				$args = array(
 					'status' => 'publish',
-					'category' => array( $wp_query->get_queried_object()->name )
+					'category' => array( sanitize_title_with_dashes( substr(get_the_archive_title(), 10) ) )
 				);
 				$products = wc_get_products( $args );
 				foreach($products as $product) {
