@@ -701,6 +701,10 @@ body.page-id-16 main.content, body.tax-product_cat main.content {
 	position: relative;
 	}
 
+body.page-id-16 aside.sidebar, body.page-id-16 aside, body.tax-product_cat aside.sidebar, body.tax-product_cat aside {
+	display: none !important;
+	}
+
 body.page-id-16 .sidebar, body.tax-product_cat .sidebar {
 	display: flex;
 	flex-direction: column;

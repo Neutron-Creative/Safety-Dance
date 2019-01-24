@@ -73,6 +73,9 @@ body.page-id-16, body.tax-product_cat {
         position: relative;
         padding-left: 50px;
     }
+    aside.sidebar, aside {
+        display: none !important;
+    }
     .sidebar {
         position: absolute;
         top: -30px;
