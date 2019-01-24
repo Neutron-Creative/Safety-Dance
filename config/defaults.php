@@ -252,7 +252,7 @@ $core_hooks = [
 		],*/
 		// Products Archive Attempt 2
 		[
-			Hooks::TAG      => 'woocommerce_archive_description',
+			Hooks::TAG      => 'woocommerce_before_main_content',
 			Hooks::CALLBACK => function() {
 				echo "</header><main class='content' style='max-width: none !important;'><div class='wrap'>";
 					echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
