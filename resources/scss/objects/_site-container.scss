@@ -177,6 +177,9 @@ body.page-id-16, body.tax-product_cat {
                 text-align: center;
                 text-decoration: none !important;
             }
+            &:last-of-type {
+                display: none !important;
+            }
         }
     }
 }

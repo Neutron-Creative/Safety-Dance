@@ -832,6 +832,10 @@ body.page-id-16 .category-list li a, body.tax-product_cat .category-list li a {
 	align-items: center;
 	}
 
+body.page-id-16 .category-list li:last-of-type, body.tax-product_cat .category-list li:last-of-type {
+	display: none !important;
+	}
+
 .sidebar {
 	display: none;
 	}
