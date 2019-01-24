@@ -54,6 +54,11 @@ body.admin-bar {
 }
 
 // Add Sidebar
+
+aside.sidebar {
+    display: none !important;
+}
+
 body.page-id-16, body.tax-product_cat {
     .bg-stripe {
         position: absolute;

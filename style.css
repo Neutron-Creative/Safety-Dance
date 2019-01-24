@@ -682,6 +682,10 @@ body.admin-bar .announcement-banner {
 	margin-right: 5px;
 	}
 
+aside.sidebar {
+	display: none !important;
+	}
+
 body.page-id-16 .bg-stripe, body.tax-product_cat .bg-stripe {
 	background: red;
 	height: 100%;
