@@ -313,10 +313,10 @@ $core_hooks = [
 					echo "<div class='product-in-loop-wc'>";
 						echo "<h3>" . $product->get_name() . "</h3>";
 						echo '<div class="product-content">';
-							$product->get_image_id();
-							$product->get_gallery_image_ids();
+							// $product->get_image_id();
+							//$product->get_gallery_image_ids();
 							echo '<div class="product-details">';
-								echo '<img src="' . get_the_post_thumbnail_url( $product->get_id(), 'full' ) . '"/></div>';
+								echo '<img src="' . get_the_post_thumbnail_url( $product->get_id(), 'full' ) . '"/>';
 							echo '</div>';
 							echo "<div class='product-details'>" . $product->get_description() . "</div>";
 						echo '</div>';
