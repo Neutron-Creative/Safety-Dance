@@ -312,7 +312,14 @@ $core_hooks = [
 				foreach($products as $product) {
 					echo "<div class='product-in-loop-wc'>";
 						echo "<h4>" . $product->get_name() . "</h4>";
-						echo "<p>" . $product->get_description() . "</p>";
+						echo '<div class="product-content">';
+							$product->get_image_id();
+							get_the_post_thumbnail_url( $product->get_id(), 'full' );
+							$product->get_gallery_image_ids();
+						echo '</div>';
+						echo '<div class="product-content">';
+							echo "<p>" . $product->get_description() . "</p>";
+						echo '</div>';
 					echo "</div>";
 				}
 				//print_r($products);
