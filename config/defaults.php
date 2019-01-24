@@ -310,8 +310,10 @@ $core_hooks = [
 				);
 				$products = wc_get_products( $args );
 				foreach($products as $product) {
-					echo "<h1>" . $product->get_name() . "</h1>";
-					print_r($product);
+					echo "<div class='product-in-loop-wc'>";
+						echo "<h4>" . $product->get_name() . "</h4>";
+						echo "<p>" . $product->get_description() . "</p>";
+					echo "</div>";
 				}
 				//print_r($products);
 				echo "</div></main>";
