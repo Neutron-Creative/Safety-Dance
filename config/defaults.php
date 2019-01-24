@@ -254,11 +254,11 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'woocommerce_before_main_content',
 			Hooks::CALLBACK => function() {
-				echo "</header><main class='content product-archive' style='max-width: none !important;'><div class='wrap'>";
+				echo "</header></main><main class='content product-archive' style='max-width: none !important;'><div class='wrap'>";
 					echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
 					echo "<p>" . get_the_archive_description() . "</p>";
 
-
+				echo "</div>";
 					// Add Sidebar
 					echo '<div class="sidebar">';
 						echo '<form action="/" method="get" class="search-form">';
@@ -299,8 +299,8 @@ $core_hooks = [
 
 						echo '</ul>';
 					echo '</div>';
-					
-				echo "</div></main></header";
+
+				echo "</main><main style='display:none;><header style='display:none;'>";
 			}
 		],
 		// Products Sidebar
@@ -315,7 +315,7 @@ $core_hooks = [
 					echo '</form>';
 					
 					echo '<ul class="category-list">';
-						echo '<div class="bg-stripe"></div>';
+						echo '<div class="bg-stripe">';
 						echo '<div class="list-header">Product List</div>';
 
 						$taxonomy     = 'product_cat';
