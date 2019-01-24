@@ -310,7 +310,7 @@ $core_hooks = [
 				);
 				$products = wc_get_products( $args );
 				foreach($products as $product) {
-					echo "<h1>Product</h1>";
+					echo "<h1>" . $product->get_name() . "</h1>";
 					print_r($product);
 				}
 				//print_r($products);
