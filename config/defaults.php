@@ -309,7 +309,6 @@ $core_hooks = [
 				$cateID = $cate->term_id;
 				$args = array(
 					'status' => 'publish',
-					'category' => $cateID
 				);
 				$products = wc_get_products( $args );
 				foreach($products as $product) {
