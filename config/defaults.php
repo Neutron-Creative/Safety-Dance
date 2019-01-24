@@ -318,7 +318,7 @@ $core_hooks = [
 							echo '<div class="product-details">';
 								echo '<img src="' . get_the_post_thumbnail_url( $product->get_id(), 'full' ) . '"/></div>';
 							echo '</div>';
-							echo "<p>" . $product->get_description() . "</p>";
+							echo "<div class='product-details'>" . $product->get_description() . "</div>";
 						echo '</div>';
 					echo "</div>";
 				}
