@@ -257,7 +257,7 @@ $core_hooks = [
 				echo "</header><main class='content product-archive' style='max-width: none !important;'><div class='wrap'>";
 					echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
 					echo "<p>" . get_the_archive_description() . "</p>";
-				echo "</div></main><header>";
+				echo "</div></main>";
 
 
 				// Add Sidebar
@@ -299,7 +299,7 @@ $core_hooks = [
 						echo '<div class="list-closer"></div>';
 
 					echo '</ul>';
-				echo '</div>';
+				echo '</div></header>';
 			}
 		],
 		// Products Sidebar
