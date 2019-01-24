@@ -271,7 +271,6 @@ $core_hooks = [
 						} else {
 							echo __( 'No products found' );
 						}
-						wp_reset_postdata();
 
 					// Sidebar
 						echo '<div class="sidebar" style="left: -44px !important;">';
