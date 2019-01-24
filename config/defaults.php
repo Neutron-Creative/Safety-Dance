@@ -260,7 +260,7 @@ $core_hooks = [
 
 
 					// Sidebar
-						echo '<div class="sidebar" style="left: -40px; !important;">';
+						echo '<div class="sidebar" style="left: -45px !important;">';
 						echo '<form action="/" method="get" class="search-form">';
 							echo '<input type="text" name="s" id="search" value="' . the_search_query() . '">';
 							echo '<input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search!' ) .'" />';
