@@ -301,6 +301,25 @@ $core_hooks = [
 				echo "</div></main><header>";
 			}
 		],
+		[
+			Hooks::TAG      => 'woocommerce_after_main_content',
+			Hooks::CALLBACK => function() {
+				$args = array( 'post_type' => 'product', 'posts_per_page' => 10, 'product_cat' => $atts[0], 'orderby' => 'rand' );
+
+				$loop = new WP_Query( $args );
+
+				echo '<h1 class="upp">Style '.$atts[0].'</h1>';
+				echo "<ul class='mylisting'>";
+				while ( $loop->have_posts() ) : $loop->the_post(); 
+				global $product; 
+
+				echo '<li><a href="'.get_permalink().'">'.get_the_post_thumbnail($loop->post->ID, 'thumbnail').'</a></li>';
+
+				endwhile; 
+
+				echo "</ul>";
+			}
+		],
 		// Products Sidebar
 		[
 			Hooks::TAG      => 'genesis_entry_content',
