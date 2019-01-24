@@ -848,6 +848,10 @@ form.woocommerce-ordering {
 	display: none !important;
 	}
 
+p.woocommerce-info {
+	display: none !important;
+	}
+
 .site-header {
 	background-color: #ff0;
 	border-bottom: 0;
