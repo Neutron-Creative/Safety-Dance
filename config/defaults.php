@@ -257,7 +257,22 @@ $core_hooks = [
 				echo "</header><main class='content product-archive' style='max-width: none !important;padding-left: 95px !important;'><div class='wrap'>";
 					echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
 					echo "<p>" . get_the_archive_description() . "</p>";
-
+					
+					// Product Loop
+						$args = array(
+							'post_type'      => 'product',
+							'posts_per_page' => 10,
+							'product_cat'    => $wp_query->get_queried_object()->name
+						);
+					
+						$loop = new WP_Query( $args );
+					
+						while ( $loop->have_posts() ) : $loop->the_post();
+							global $product;
+							echo '<br /><a href="'.get_permalink().'">' . woocommerce_get_product_thumbnail().' '.get_the_title().'</a>';
+						endwhile;
+					
+						wp_reset_query();
 
 					// Sidebar
 						echo '<div class="sidebar" style="left: -44px !important;">';
