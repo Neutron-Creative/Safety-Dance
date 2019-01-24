@@ -300,7 +300,7 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'woocommerce_archive_description',
 			Hooks::CALLBACK => function() {
-				echo "</header><main class='content'><div class='wrap'>";
+				echo "</header><main class='content' style='max-width: none !important;'><div class='wrap'>";
 					echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
 					echo "<p>" . get_the_archive_description() . "</p>";
 				echo "</div></main><header>";
