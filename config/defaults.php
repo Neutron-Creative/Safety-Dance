@@ -309,11 +309,9 @@ $core_hooks = [
 					'status' => 'publish',
 				);
 				$products = wc_get_products( $args );
-				for($i = 0; $i<count($products); $i++) {
-					//print_r($products[$i]);
-					echo "<h1>" . $products[$i][name] . "</h1>";
-					echo $products[$i];
-					
+				for($products as $product) {
+					echo "<h1>Product</h1>";
+					print_r($product);
 				}
 				//print_r($products);
 				echo "</div></main>";
