@@ -254,7 +254,7 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'woocommerce_before_main_content',
 			Hooks::CALLBACK => function() {
-				if(get_the_archive_title()) {
+				if(!is_product()) {
 					echo "</header><main class='content product-archive'><div class='wrap'>";
 						echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
 						echo "<p>" . get_the_archive_description() . "</p>";
@@ -306,7 +306,7 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'woocommerce_after_main_content',
 			Hooks::CALLBACK => function() {
-				if(get_the_archive_title()) {
+				if(!is_product()) {
 					echo "<main class='content product-archive'><div class='wrap'>";
 						$cate = get_queried_object();
 						$cateID = $cate->term_id;
