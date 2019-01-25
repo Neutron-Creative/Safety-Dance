@@ -285,6 +285,12 @@ main.product-archive {
                 color: #000;
                 margin-bottom: 10px;
                 font-size: 14px !important;
+                &.image-details {
+                    width: 40% !important;
+                }
+                &.content-details {
+                    width: 60% !important;
+                }
                 * {
                     font-size: 14px !important;
                 }

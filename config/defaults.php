@@ -341,7 +341,7 @@ $core_hooks = [
 								echo "</div>";
 								echo '<div class="product-content">';
 									// $product->get_image_id();
-									echo '<div class="product-details">';
+									echo '<div class="product-details image-details">';
 										echo '<img class="product-image" src="' . get_the_post_thumbnail_url( $product->get_id(), 'full' ) . '"/>';
 										foreach($attachmentIDs as $attachmentID) {
 											echo '<img class="product-gallery-image" src="' . wp_get_attachment_url( $attachmentID ) . '"/>';
@@ -352,7 +352,7 @@ $core_hooks = [
 											}
 										echo '</div>';
 									echo '</div>';
-									echo "<div class='product-details' style='color:#000'><strong>Product Details</strong><br/>" . $product->get_description() . "</div>";
+									echo "<div class='product-details content-details' style='color:#000'><strong>Product Details</strong><br/>" . $product->get_description() . "</div>";
 								echo '</div>';
 								echo '<p class="product-disclaimer">' . $product->get_meta('disclaimers') . '</p>';
 							echo "</div></a>";
