@@ -280,7 +280,7 @@ $core_hooks = [
 						echo 'Educated Design &amp; Development, Inc. © ' . date("Y") . ' All Rights Reserved.';
 					echo'</div>';
 					echo '<div class="footer-row">';
-						echo '<span style="color:#CCC; font-family:Arial; font-size:16px; font-style:italic; font-weight:bold;">ED&amp;D products are RoHS, REACH, and Conflict-Minerals Free</span>';
+						echo '<span style="color:#CCC; font-family:Arial; font-size:16px; font-style:italic; font-weight:bold; padding: 10px 0;">ED&amp;D products are RoHS, REACH, and Conflict-Minerals Free</span>';
 					echo '</div>';
 				echo '</div>';
 			}
