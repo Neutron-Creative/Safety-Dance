@@ -346,3 +346,15 @@ body.single-product h1 {
     font-size: 32px !important;
     letter-spacing: .25 !important;
 }
+
+.header-row {
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    @media(max-width: 895px) {
+        flex-direction: column;
+        img {
+            margin: 0 auto;
+        }
+    }
+}

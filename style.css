@@ -975,6 +975,13 @@ body.single-product h1 {
 	letter-spacing: 0.25 !important;
 	}
 
+.header-row {
+	display: flex;
+	flex-direction: row;
+
+	align-items: flex-start;
+	}
+
 .site-header {
 	background-color: #ff0;
 	border-bottom: 0;
@@ -2253,6 +2260,12 @@ body.single-product h1 {
 	body.page-id-16 main.content, body.tax-product_cat main.content, body.single-product main.content {
 		padding-left: 10px !important;
 		padding-right: 10px !important;
+		}
+	.header-row {
+		flex-direction: column;
+		}
+	.header-row img {
+		margin: 0 auto;
 		}
 	li[id^="menu-item-4"] {
 		display: none !important;
