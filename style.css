@@ -1089,6 +1089,7 @@ body.single-product .wrap {
 	}
 
 .footer * {
+	color: #fff;
 	font-size: 14px !important;
 	font-size: 1.4rem !important;
 	}
@@ -1113,6 +1114,12 @@ body.single-product .wrap {
 
 .footer .footer-row a {
 	color: #fff;
+	text-decoration: underline;
+	}
+
+.footer .footer-row a.yellow {
+	color: #ff0 !important;
+	font-weight: 700 !important;
 	}
 
 .wrap {

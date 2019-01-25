@@ -36,6 +36,7 @@
 	flex-direction: column;
 	* {
 		font-size: 14px !important;
+		color: #FFF;
 	}
 	.footer-row {
 		width: 100%;
@@ -52,6 +53,11 @@
 		}
 		a {
 			color: #FFF;
+			text-decoration: underline;
+			&.yellow {
+				color: #FFFF00 !important;
+				font-weight: 700 !important;
+			}
 		}
 	}
 }
