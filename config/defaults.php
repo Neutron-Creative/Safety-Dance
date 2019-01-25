@@ -254,7 +254,6 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'woocommerce_before_main_content',
 			Hooks::CALLBACK => function() {
-				global $product;
 
 					echo "</header><main class='content product-archive'><div class='wrap'>";
 						if(!is_product()) {
@@ -264,6 +263,7 @@ $core_hooks = [
 								echo "<img src='/wp-content/uploads/2019/01/ISO_accredited.gif'/>";
 							echo "</div>";
 						} else {
+							global $product;
 							echo "<h1>" . $product->get_name() . "</h1>";
 						}
 
