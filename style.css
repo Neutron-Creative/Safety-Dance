@@ -2161,6 +2161,14 @@ main.product-archive .product-in-loop-wc div .product-content .product-details .
 	.site-inner {
 		padding: 0 10px !important;
 		}
+	.wrap {
+		width: 100% !important;
+		}
+	h1 {
+		font-size: 42px !important;
+		font-size: 4.2rem !important;
+		margin-bottom: 10px !important;
+		}
 	li[id^="menu-item-4"] {
 		display: none !important;
 		}
