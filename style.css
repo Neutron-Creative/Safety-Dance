@@ -2152,7 +2152,7 @@ main.product-archive .product-in-loop-wc div .product-content .product-details .
 	li[id^="menu-item-4"] {
 		display: none !important;
 		}
-	li#menu-item-218 {
+	li#menu-item-218 a {
 		width: auto !important;
 		}
 	li#menu-item-218 button::before {

@@ -11,7 +11,9 @@
 		display: none !important;
 	}
 	li#menu-item-218 {
-		width: auto !important;
+		a {
+			width: auto !important;
+		}
 		button::before {
 			border-color: #424950 transparent transparent !important;
 		}
