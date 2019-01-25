@@ -338,7 +338,7 @@ $core_hooks = [
 										$specificationBadges = $product->get_meta('specifications');
 										echo '<div class="specification-badges">';
 											foreach($specificationBadges as $badge) {
-												echo '<div class="' . $badge . '"></div>';
+												echo '<img src="/wp-content/uploads/2019/01/' . $badge . '.gif"/>';
 											}
 										echo '</div>';
 									echo '</div>';

@@ -283,6 +283,10 @@ main.product-archive {
                     height: auto;
                 }
             }
+            .specification-badges {
+                display: flex;
+                flex-direction: row;
+            }
         }
     }
 }

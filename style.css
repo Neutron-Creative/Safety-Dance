@@ -913,6 +913,11 @@ main.product-archive .product-in-loop-wc .product-content .product-details .prod
 	width: 100%;
 	}
 
+main.product-archive .product-in-loop-wc .product-content .specification-badges {
+	display: flex;
+	flex-direction: row;
+	}
+
 .site-header {
 	background-color: #ff0;
 	border-bottom: 0;
