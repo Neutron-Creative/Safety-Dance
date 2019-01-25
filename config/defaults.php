@@ -282,6 +282,32 @@ $core_hooks = [
 					echo '<div class="footer-row">';
 						echo '<span style="color:#CCC; font-family:Arial; font-size:16px; font-style:italic; font-weight:bold; padding: 10px 0;">ED&amp;D products are RoHS, REACH, and Conflict-Minerals Free</span>';
 					echo '</div>';
+					echo '<div class="footer-row">';
+						$taxonomy     = 'product_cat';
+						$orderby      = 'name';  
+						$show_count   = 0;      // 1 for yes, 0 for no
+						$pad_counts   = 0;      // 1 for yes, 0 for no
+						$hierarchical = 1;      // 1 for yes, 0 for no  
+						$title        = '';  
+						$empty        = 0;
+					
+						$args = array(
+							'taxonomy'     => $taxonomy,
+							'orderby'      => $orderby,
+							'show_count'   => $show_count,
+							'pad_counts'   => $pad_counts,
+							'hierarchical' => $hierarchical,
+							'title_li'     => $title,
+							'hide_empty'   => $empty
+						);
+						$all_categories = get_categories( $args );
+						foreach ($all_categories as $cat) {
+							if($cat->category_parent == 0) {
+								$category_id = $cat->term_id;       
+								echo '<a class="footer-item" href="'. get_term_link($cat->slug, 'product_cat') .'">['. $cat->name .']</a>'; 
+							}
+						}
+					echo '</div>';
 				echo '</div>';
 			}
 		],
