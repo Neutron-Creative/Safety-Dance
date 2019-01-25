@@ -285,6 +285,9 @@ main.product-archive {
                 color: #000;
                 margin-bottom: 10px;
                 font-size: 14px !important;
+                @media(max-width: 720px) {
+                    width: 100% !important;
+                }
                 * {
                     font-size: 14px !important;
                 }
