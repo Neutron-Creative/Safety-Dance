@@ -258,7 +258,10 @@ $core_hooks = [
 					// Category Archive
 					echo "</header><main class='content product-archive'><div class='wrap'>";
 						echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
+						echo "<div style='display:flex;flex-direction:row;'>";
 						echo "<p>" . get_the_archive_description() . "</p>";
+						echo "<img src='/wp-content/uploads/2019/01/ISO_accredited.gif'/>";
+						echo "</div>";
 
 						// Sidebar
 							echo '<div class="sidebar" style="left: -44px !important;">';
