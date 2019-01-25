@@ -286,6 +286,10 @@ main.product-archive {
             .specification-badges {
                 display: flex;
                 flex-direction: row;
+                align-items: center;
+                img {
+                    margin-right: 5px;
+                }
             }
         }
     }
