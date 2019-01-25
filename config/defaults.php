@@ -366,9 +366,10 @@ $core_hooks = [
 											}
 											echo "</ul>";
 										}
-										if($stubbyTable) echo '<img class="stubby-table" src="' . $stubbyTable . '"/>';
+										if($stubbyTable) echo '<img class="stubby-table" src="' . wp_get_attachment_url( $stubbyTable ) . '"/>';
 									echo "</div>";
 								echo '</div>';
+								if($fullTable) echo '<img class="full-table" src="' . wp_get_attachment_url( $fullTable ) . '"/>';
 								echo '<p class="product-disclaimer">' . $product->get_meta('disclaimers') . '</p>';
 							echo "</div></a>";
 						}
