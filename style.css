@@ -917,14 +917,6 @@ main.product-archive .product-in-loop-wc .product-content .product-details {
 	width: 50%;
 	}
 
-main.product-archive .product-in-loop-wc .product-content .product-details.image-details {
-	width: 40% !important;
-	}
-
-main.product-archive .product-in-loop-wc .product-content .product-details.content-details {
-	width: 60% !important;
-	}
-
 main.product-archive .product-in-loop-wc .product-content .product-details * {
 	font-size: 14px !important;
 	font-size: 1.4rem !important;

@@ -327,6 +327,7 @@ $core_hooks = [
 						foreach($products as $product) {
 							$attachmentIDs = $product->get_gallery_image_ids();
 							$specificationBadges = $product->get_meta('specifications');
+							$meetsRequirements = $product->get_meta('meets_requirements');
 
 							echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><div>";
 								if(in_array('exclusive', $specificationBadges)) {
@@ -352,7 +353,18 @@ $core_hooks = [
 											}
 										echo '</div>';
 									echo '</div>';
-									echo "<div class='product-details content-details' style='color:#000'><strong>Product Details</strong><br/>" . $product->get_description() . "</div>";
+									echo "<div class='product-details content-details' style='color:#000'>";
+										echo "<strong>Product Details</strong><br/>";
+										echo $product->get_description();
+										if($meetsRequirements) {
+											echo "<h5>Meets Requirements for Testing Standard(s) including but not limited to:</h5>";
+											echo "<ul class='product-requirements'>";
+											foreach($meetsRequirements as $requirement) {
+												echo "<li>" . $requirement . "</li>";
+											}
+											echo "</ul>";
+										}
+									echo "</div>";
 								echo '</div>';
 								echo '<p class="product-disclaimer">' . $product->get_meta('disclaimers') . '</p>';
 							echo "</div></a>";
