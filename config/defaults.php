@@ -322,7 +322,7 @@ $core_hooks = [
 						);
 						$products = wc_get_products( $args );
 						foreach($products as $product) {
-							echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><p class='product-in-loop-wc'>";
+							echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><div class='product-in-loop-wc'>";
 								echo "<h3>" . $product->get_name() . "</h3>";
 								echo '<div class="product-content">';
 									// $product->get_image_id();
