@@ -2149,6 +2149,15 @@ main.product-archive .product-in-loop-wc div .product-content .product-details .
 	}
 
 @media (max-width: 895px) {
+	.announcement-banner {
+		display: none !important;
+		}
+	body {
+		margin-top: 0 !important;
+		}
+	.site-container {
+		border-radius: 0 !important;
+		}
 	li[id^="menu-item-4"] {
 		display: none !important;
 		}

@@ -32,9 +32,21 @@ body.admin-bar {
     }
 }
 
+@media(max-width: 895px) {
+    .announcement-banner {
+        display: none !important;
+    }
+    body {
+        margin-top: 0 !important;
+    }
+    .site-container {
+        border-radius: 0 !important;
+    }
+}
+
 .announcement-banner {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 999;
     background: #777;
