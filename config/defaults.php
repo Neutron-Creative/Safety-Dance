@@ -263,7 +263,7 @@ $core_hooks = [
 						echo '<a href="/contact/" class="footer-item">[CONTACT]</a>';
 					echo '</div>';
 					echo '<div class="footer-row">';
-						echo '<div class="footer-item">';
+						echo '<div class="footer-item" style="text-align:right;">';
 							echo 'Educated Design &amp; Development<br/>';
 							echo '901 Sheldon Drive<br/>';
 							echo 'Cary, NC 27513 USA<br/>';
