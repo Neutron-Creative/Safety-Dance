@@ -434,7 +434,7 @@ $core_hooks = [
 					$stubbyTable = $product->get_meta('stubby_table');
 					$fullTable = $product->get_meta('full_table');
 
-					echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><div>";
+					echo "<main class='content product-archive'><div class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><div>";
 						if(in_array('exclusive', $specificationBadges)) {
 							echo '<img class="exclusive-badge" src="/wp-content/uploads/2019/01/edd-exclusive.png"/>';
 						}
@@ -474,7 +474,7 @@ $core_hooks = [
 						echo '</div>';
 						if($fullTable) echo '<img class="full-table" src="' . wp_get_attachment_url( $fullTable ) . '"/>';
 						echo '<p class="product-disclaimer">' . $product->get_meta('disclaimers') . '</p>';
-					echo "</div></a>";
+					echo "</div></div></main>";
 					
 				}
 			}
