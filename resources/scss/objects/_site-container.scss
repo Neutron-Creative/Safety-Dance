@@ -338,13 +338,18 @@ main.product-archive {
     }
 }
 
-body.single-product div.product {
-    display: none !important;
-}
 
-body.single-product h1 {
-    font-size: 32px !important;
-    letter-spacing: .25 !important;
+body.single-product {
+    h1 {
+        font-size: 32px !important;
+        letter-spacing: .25 !important;
+    }
+    div.product {
+        display: none !important;
+    }
+    .wrap {
+        padding: 0 10px !important;
+    }
 }
 
 .header-row {

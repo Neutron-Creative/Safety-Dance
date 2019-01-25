@@ -965,14 +965,18 @@ main.product-archive .product-in-loop-wc .product-content .specification-badges 
 	margin-right: 5px;
 	}
 
-body.single-product div.product {
-	display: none !important;
-	}
-
 body.single-product h1 {
 	font-size: 32px !important;
 	font-size: 3.2rem !important;
 	letter-spacing: 0.25 !important;
+	}
+
+body.single-product div.product {
+	display: none !important;
+	}
+
+body.single-product .wrap {
+	padding: 0 10px !important;
 	}
 
 .header-row {
