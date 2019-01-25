@@ -909,7 +909,11 @@ main.product-archive .product-in-loop-wc .product-content {
 	}
 
 main.product-archive .product-in-loop-wc .product-content .product-details {
+	color: #000;
+	font-size: 14px !important;
+	font-size: 1.4rem !important;
 	height: auto;
+	margin-bottom: 10px;
 	width: 50%;
 	}
 
