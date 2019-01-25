@@ -916,6 +916,7 @@ main.product-archive .product-in-loop-wc .product-content .product-details .prod
 main.product-archive .product-in-loop-wc .product-content .specification-badges {
 	display: flex;
 	flex-direction: row;
+	margin-top: 10px;
 
 	align-items: center;
 	}
