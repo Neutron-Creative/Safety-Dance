@@ -903,6 +903,10 @@ main.product-archive .product-in-loop-wc h3 {
 	text-shadow: 2px 3px 5px #333 !important;
 	}
 
+main.product-archive .product-in-loop-wc .full-table {
+	margin-bottom: 10px !important;
+	}
+
 main.product-archive .product-in-loop-wc .product-content {
 	display: flex;
 	flex-direction: row;
