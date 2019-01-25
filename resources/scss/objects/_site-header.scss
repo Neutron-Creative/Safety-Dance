@@ -6,6 +6,16 @@
 /// @link   https://github.com/seothemes/genesis-starter-theme
 ////
 
+@media(max-width:895px) {
+	li[id^='menu-item-4'] {
+		display: none !important;
+	}
+}
+
+li[id^='menu-item-2'] {
+	display: none;
+}
+
 .site-header {
 	background-color: #FFFF00;
 	height: 50px;

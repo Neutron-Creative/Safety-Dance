@@ -904,6 +904,10 @@ main.product-archive .product-in-loop-wc div .product-content .product-details .
 	width: 100%;
 	}
 
+li[id^="menu-item-2"] {
+	display: none;
+	}
+
 .site-header {
 	background-color: #ff0;
 	border-bottom: 0;
@@ -2142,6 +2146,12 @@ main.product-archive .product-in-loop-wc div .product-content .product-details .
 	.first {
 		clear: both;
 		margin-left: 0;
+		}
+	}
+
+@media (max-width: 895px) {
+	li[id^="menu-item-4"] {
+		display: none !important;
 		}
 	}
 
