@@ -328,6 +328,8 @@ $core_hooks = [
 							$attachmentIDs = $product->get_gallery_image_ids();
 							$specificationBadges = $product->get_meta('specifications');
 							$meetsRequirements = $product->get_meta('meets_requirements');
+							$stubbyTable = $product->get_meta('stubby_table');
+							$fullTable = $product->get_meta('full_table');
 
 							echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><div>";
 								if(in_array('exclusive', $specificationBadges)) {
@@ -364,6 +366,7 @@ $core_hooks = [
 											}
 											echo "</ul>";
 										}
+										if($stubbyTable) echo '<img class="stubby-table" src="' . $stubbyTable . '"/>';
 									echo "</div>";
 								echo '</div>';
 								echo '<p class="product-disclaimer">' . $product->get_meta('disclaimers') . '</p>';
