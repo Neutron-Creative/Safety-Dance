@@ -15,7 +15,10 @@
 			width: auto !important;
 		}
 		button::before {
-			border-color: #424950 transparent transparent !important;
+			border-color: #0094DE transparent transparent !important;
+		}
+		button.activated::before {
+			border-color: transparent transparent #0094DE !important;
 		}
 	}
 	header.site-header .wrap nav.nav-primary {

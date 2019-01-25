@@ -2156,7 +2156,10 @@ main.product-archive .product-in-loop-wc div .product-content .product-details .
 		width: auto !important;
 		}
 	li#menu-item-218 button::before {
-		border-color: #424950 transparent transparent !important;
+		border-color: #0094de transparent transparent !important;
+		}
+	li#menu-item-218 button.activated::before {
+		border-color: transparent transparent #0094de !important;
 		}
 	header.site-header .wrap nav.nav-primary {
 		background: #ff0 !important;
