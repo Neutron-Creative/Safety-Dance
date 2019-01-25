@@ -377,6 +377,7 @@ $core_hooks = [
 					echo "</div></main>";
 				} else {
 					// Single Product
+					echo 'Single Product!';
 					print_r($product);
 				}
 			}
