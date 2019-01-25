@@ -306,6 +306,52 @@ $core_hooks = [
 					echo "</div></main><header>";
 				} else {
 					// Single Product
+					global $product;
+
+					echo "</header><main class='content product-archive'><div class='wrap'>";
+						echo "<h1>" . $product->get_name() . "</h1>";
+
+						// Sidebar
+							echo '<div class="sidebar" style="left: -44px !important;">';
+							echo '<form action="/" method="get" class="search-form">';
+								echo '<input type="text" name="s" id="search" value="' . the_search_query() . '">';
+								echo '<input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search!' ) .'" />';
+							echo '</form>';
+							
+							echo '<ul class="category-list">';
+								echo '<div class="bg-stripe"></div>';
+								echo '<div class="list-header">Product List</div>';
+
+								$taxonomy     = 'product_cat';
+								$orderby      = 'name';  
+								$show_count   = 0;      // 1 for yes, 0 for no
+								$pad_counts   = 0;      // 1 for yes, 0 for no
+								$hierarchical = 1;      // 1 for yes, 0 for no  
+								$title        = '';  
+								$empty        = 0;
+							
+								$args = array(
+									'taxonomy'     => $taxonomy,
+									'orderby'      => $orderby,
+									'show_count'   => $show_count,
+									'pad_counts'   => $pad_counts,
+									'hierarchical' => $hierarchical,
+									'title_li'     => $title,
+									'hide_empty'   => $empty
+								);
+								$all_categories = get_categories( $args );
+								foreach ($all_categories as $cat) {
+									if($cat->category_parent == 0) {
+										$category_id = $cat->term_id;       
+										echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a></li>'; 
+									}
+								}
+
+								echo '<div class="list-closer"></div>';
+
+							echo '</ul>';
+						echo '</div>';
+					echo "</div></main><header>";
 				}
 			}
 		],
@@ -337,7 +383,6 @@ $core_hooks = [
 								}
 								echo "<div style='display:block;width:100%;height:2px;margin-bottom:10px;margin-top:0;background-color:#0094DE;'></div>";
 								echo "<div class='title-row'>";
-									echo "<h3>" . $product->get_name() . "</h3>";
 									if(in_array('millenium', $specificationBadges)) {
 										echo '<img src="/wp-content/uploads/2019/01/millenium.gif"/>';
 									}
