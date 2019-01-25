@@ -2272,6 +2272,9 @@ main.product-archive .product-in-loop-wc .product-content .specification-badges 
 	main.product-archive .product-in-loop-wc .product-content .product-details .product-image, main.product-archive .product-in-loop-wc .product-content .product-details .product-gallery-image {
 		margin: 0 auto !important;
 		}
+	main.product-archive .product-in-loop-wc .product-content .specification-badges {
+		justify-content: center;
+		}
 	}
 
 @media (max-width: 950px) {
