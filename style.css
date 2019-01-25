@@ -858,6 +858,10 @@ p.woocommerce-info {
 	display: none !important;
 	}
 
+main.product-archive {
+	margin: 10px auto !important;
+	}
+
 main.product-archive .wrap {
 	flex-direction: column !important;
 	}
