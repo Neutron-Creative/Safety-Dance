@@ -34,6 +34,9 @@
 	align-content: center;
 	justify-content: center;
 	flex-direction: column;
+	* {
+		font-size: 14px !important;
+	}
 	.footer-row {
 		width: 100%;
 		display: flex;
@@ -46,6 +49,9 @@
 			justify-content: center;
 			flex-direction: column;
 			margin: 5px;
+		}
+		a {
+			color: #FFF;
 		}
 	}
 }

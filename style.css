@@ -1088,6 +1088,11 @@ body.single-product .wrap {
 	justify-content: center;
 	}
 
+.footer * {
+	font-size: 14px !important;
+	font-size: 1.4rem !important;
+	}
+
 .footer .footer-row {
 	display: flex;
 	flex-direction: row;
@@ -1104,6 +1109,10 @@ body.single-product .wrap {
 
 	align-content: center;
 	justify-content: center;
+	}
+
+.footer .footer-row a {
+	color: #fff;
 	}
 
 .wrap {
