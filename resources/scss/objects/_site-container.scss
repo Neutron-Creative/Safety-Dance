@@ -258,8 +258,12 @@ main.product-archive {
             display: flex;
             flex-direction: column;
         }
+        .title-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
         h3 {
-                display: block !important;
                 font-style: italic !important;
                 font-size: 18px !important;
                 font-family: Arial, Gadget, sans-serif !important;
