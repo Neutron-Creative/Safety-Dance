@@ -2152,14 +2152,20 @@ main.product-archive .product-in-loop-wc div .product-content .product-details .
 	li[id^="menu-item-4"] {
 		display: none !important;
 		}
-	nav.nav-primary {
+	li#menu-item-218 {
+		width: auto !important;
+		}
+	li#menu-item-218 button::before {
+		border-color: #424950 transparent transparent !important;
+		}
+	header.site-header .wrap nav.nav-primary {
 		background: #ff0 !important;
 		}
-	nav.nav-primary ul {
+	header.site-header .wrap nav.nav-primary ul {
 		border: none !important;
 		}
-	nav.nav-primary ul li a {
-		background: none !important;
+	header.site-header .wrap nav.nav-primary ul li a {
+		background-image: none !important;
 		padding: 5px 0 !important;
 		text-align: center !important;
 		width: 100% !important;
