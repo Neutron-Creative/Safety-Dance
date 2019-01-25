@@ -377,9 +377,56 @@ $core_hooks = [
 					echo "</div></main>";
 				} else {
 					// Single Product
-					echo 'Single Product!';
 					global $product;
-					print_r($product);
+					// Product Loop
+					$attachmentIDs = $product->get_gallery_image_ids();
+					$specificationBadges = $product->get_meta('specifications');
+					$meetsRequirements = $product->get_meta('meets_requirements');
+					$stubbyTable = $product->get_meta('stubby_table');
+					$fullTable = $product->get_meta('full_table');
+
+					echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><div>";
+						if(in_array('exclusive', $specificationBadges)) {
+							echo '<img class="exclusive-badge" src="/wp-content/uploads/2019/01/edd-exclusive.png"/>';
+						}
+						echo "<div style='display:block;width:100%;height:2px;margin-bottom:10px;margin-top:0;background-color:#0094DE;'></div>";
+						echo "<div class='title-row'>";
+							echo "<h3>" . $product->get_name() . "</h3>";
+							if(in_array('millenium', $specificationBadges)) {
+								echo '<img src="/wp-content/uploads/2019/01/millenium.gif"/>';
+							}
+						echo "</div>";
+						echo '<div class="product-content">';
+							// $product->get_image_id();
+							echo '<div class="product-details image-details">';
+								echo '<img class="product-image" src="' . get_the_post_thumbnail_url( $product->get_id(), 'full' ) . '"/>';
+								foreach($attachmentIDs as $attachmentID) {
+									echo '<img class="product-gallery-image" src="' . wp_get_attachment_url( $attachmentID ) . '"/>';
+								}
+								echo '<div class="specification-badges">';
+									foreach($specificationBadges as $badge) {
+										if($badge != 'millenium' && $badge != 'exclusive') echo '<img src="/wp-content/uploads/2019/01/' . $badge . '.gif"/>';
+									}
+								echo '</div>';
+							echo '</div>';
+							echo "<div class='product-details content-details' style='color:#000'>";
+								echo "<strong>Product Details</strong><br/>";
+								echo $product->get_description();
+								if($meetsRequirements) {
+									echo "<ul class='product-requirements'>";
+									echo "<h5>Meets Requirements for Testing Standard(s) including but not limited to:</h5>";
+									foreach($meetsRequirements as $requirement) {
+										echo "<li>" . $requirement . "</li>";
+									}
+									echo "</ul>";
+								}
+								if($stubbyTable) echo '<img class="stubby-table" src="' . wp_get_attachment_url( $stubbyTable ) . '"/>';
+							echo "</div>";
+						echo '</div>';
+						if($fullTable) echo '<img class="full-table" src="' . wp_get_attachment_url( $fullTable ) . '"/>';
+						echo '<p class="product-disclaimer">' . $product->get_meta('disclaimers') . '</p>';
+					echo "</div></a>";
+					
 				}
 			}
 		],
