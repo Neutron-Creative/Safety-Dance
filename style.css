@@ -914,7 +914,7 @@ main.product-archive .product-in-loop-wc .product-content .product-details {
 	font-size: 1.4rem !important;
 	height: auto;
 	margin-bottom: 10px;
-	width: 50%;
+	width: 100%;
 	}
 
 main.product-archive .product-in-loop-wc .product-content .product-details * {
@@ -2263,8 +2263,8 @@ main.product-archive .product-in-loop-wc .product-content .specification-badges 
 	}
 
 @media (max-width: 720px) {
-	main.product-archive .product-in-loop-wc .product-content .product-details {
-		width: 100% !important;
+	main.product-archive .product-in-loop-wc .product-content {
+		flex-direction: column !important;
 		}
 	}
 
