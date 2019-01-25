@@ -267,13 +267,13 @@ $core_hooks = [
 							echo 'Educated Design &amp; Development<br/>';
 							echo '901 Sheldon Drive<br/>';
 							echo 'Cary, NC 27513 USA<br/>';
-							echo 'Email: <a class="yellow" href="mailto:info@ProductSafeT.com">info@ProductSafeT.com</a>';
+							echo '<a class="yellow" href="mailto:info@ProductSafeT.com"><span style="color:#FFF">Email: </span>info@ProductSafeT.com</a>';
 						echo '</div>';
 						echo '<div class="footer-item bold">';
 							echo 'Tel: 800-806-6236<br/>';
 							echo 'Tel: (Int.) 001-919-469-9434<br/>';
 							echo 'Fax: 919-469-5743<br/>';
-							echo 'URL: <a class="yellow" href="mailto:info@ProductSafeT.com">ProductSafeT.com</a>';
+							echo '<a class="yellow" href="mailto:info@ProductSafeT.com"><span style="color:#FFF">URL: </span>ProductSafeT.com</a>';
 						echo '</div>';
 					echo '</div>';
 					echo '<div class="footer-row">';
