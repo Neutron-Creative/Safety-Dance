@@ -250,6 +250,13 @@ $core_hooks = [
 				}
 			}
 		],*/
+		// Footer
+		[
+			Hooks::TAG      => 'wp_footer',
+			Hooks::CALLBACK => function() {
+				echo '<h1>Footer</h1>';
+			}
+		],
 		// Products Archive Attempt 2
 		[
 			Hooks::TAG      => 'woocommerce_before_main_content',
