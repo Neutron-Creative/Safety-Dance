@@ -2149,7 +2149,7 @@ main.product-archive .product-in-loop-wc div .product-content .product-details .
 	}
 
 @media (min-width: 900px) {
-	.site-header li a {
+	.site-header .wrap ul li a {
 		background-size: 15px !important;
 		font-size: 16px !important;
 		font-size: 1.6rem !important;
