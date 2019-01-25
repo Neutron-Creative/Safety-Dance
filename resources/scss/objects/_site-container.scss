@@ -105,6 +105,10 @@ body.page-id-16, body.tax-product_cat {
     main.content {
         position: relative !important;
         padding-left: 50px !important;
+        @media(max-width: 895px) {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
     }
     aside.sidebar, aside {
         display: none !important;

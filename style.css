@@ -2177,6 +2177,10 @@ main.product-archive .product-in-loop-wc div .product-content .product-details .
 	main.product-archive {
 		padding-left: 0 !important;
 		}
+	body.page-id-16 main.content, body.tax-product_cat main.content {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+		}
 	li[id^="menu-item-4"] {
 		display: none !important;
 		}
