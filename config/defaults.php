@@ -329,9 +329,13 @@ $core_hooks = [
 							$specificationBadges = $product->get_meta('specifications');
 
 							echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><div>";
+								if(in_array('exclusive', $specificationBadges)) {
+									echo '<img class="exclusive-badge" src="/wp-content/uploads/2019/01/edd-exclusive.png"/>';
+								}
+								echo "<div style='display:block;width:100%;height:2px;margin-bottom:10px;margin-top:0;background-color:#0094DE;'></div>";
 								echo "<div class='title-row'>";
 									echo "<h3>" . $product->get_name() . "</h3>";
-									if(in_array('exclusive', $specificationBadges)) {
+									if(in_array('millenium', $specificationBadges)) {
 										echo '<img src="/wp-content/uploads/2019/01/millenium.gif"/>';
 									}
 								echo "</div>";
