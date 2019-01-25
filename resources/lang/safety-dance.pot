@@ -29,42 +29,42 @@ msgstr ""
 msgid "Display featured image?"
 msgstr ""
 
-#: config/defaults.php:489
+#: config/defaults.php:493
 msgid "Return to top"
 msgstr ""
 
-#: config/defaults.php:607
+#: config/defaults.php:611
 msgid "Center Content"
 msgstr ""
 
-#: config/defaults.php:721
+#: config/defaults.php:725
 msgid "Header Menu"
 msgstr ""
 
-#: config/defaults.php:722
+#: config/defaults.php:726
 msgid "After Header Menu"
 msgstr ""
 
-#: config/defaults.php:754
+#: config/defaults.php:758
 msgid "Front Page 1"
 msgstr ""
 
-#: config/defaults.php:755
+#: config/defaults.php:759
 msgid "Front Page 1 widget area."
 msgstr ""
 
-#: config/defaults.php:772
+#: config/defaults.php:776
 msgid "Front Page 2"
 msgstr ""
 
-#: config/defaults.php:773
+#: config/defaults.php:777
 msgid "Front Page 2 widget area."
 msgstr ""
 
-#: config/defaults.php:781
+#: config/defaults.php:785
 msgid "Front Page 3"
 msgstr ""
 
-#: config/defaults.php:782
+#: config/defaults.php:786
 msgid "Front Page 3 widget area."
 msgstr ""

@@ -254,81 +254,85 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'woocommerce_before_main_content',
 			Hooks::CALLBACK => function() {
-				echo "</header><main class='content product-archive'><div class='wrap'>";
-					echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
-					echo "<p>" . get_the_archive_description() . "</p>";
+				if(get_the_archive_title()) {
+					echo "</header><main class='content product-archive'><div class='wrap'>";
+						echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
+						echo "<p>" . get_the_archive_description() . "</p>";
 
-					// Sidebar
-						echo '<div class="sidebar" style="left: -44px !important;">';
-						echo '<form action="/" method="get" class="search-form">';
-							echo '<input type="text" name="s" id="search" value="' . the_search_query() . '">';
-							echo '<input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search!' ) .'" />';
-						echo '</form>';
-						
-						echo '<ul class="category-list">';
-							echo '<div class="bg-stripe"></div>';
-							echo '<div class="list-header">Product List</div>';
+						// Sidebar
+							echo '<div class="sidebar" style="left: -44px !important;">';
+							echo '<form action="/" method="get" class="search-form">';
+								echo '<input type="text" name="s" id="search" value="' . the_search_query() . '">';
+								echo '<input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search!' ) .'" />';
+							echo '</form>';
+							
+							echo '<ul class="category-list">';
+								echo '<div class="bg-stripe"></div>';
+								echo '<div class="list-header">Product List</div>';
 
-							$taxonomy     = 'product_cat';
-							$orderby      = 'name';  
-							$show_count   = 0;      // 1 for yes, 0 for no
-							$pad_counts   = 0;      // 1 for yes, 0 for no
-							$hierarchical = 1;      // 1 for yes, 0 for no  
-							$title        = '';  
-							$empty        = 0;
-						
-							$args = array(
-								'taxonomy'     => $taxonomy,
-								'orderby'      => $orderby,
-								'show_count'   => $show_count,
-								'pad_counts'   => $pad_counts,
-								'hierarchical' => $hierarchical,
-								'title_li'     => $title,
-								'hide_empty'   => $empty
-							);
-							$all_categories = get_categories( $args );
-							foreach ($all_categories as $cat) {
-								if($cat->category_parent == 0) {
-									$category_id = $cat->term_id;       
-									echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a></li>'; 
+								$taxonomy     = 'product_cat';
+								$orderby      = 'name';  
+								$show_count   = 0;      // 1 for yes, 0 for no
+								$pad_counts   = 0;      // 1 for yes, 0 for no
+								$hierarchical = 1;      // 1 for yes, 0 for no  
+								$title        = '';  
+								$empty        = 0;
+							
+								$args = array(
+									'taxonomy'     => $taxonomy,
+									'orderby'      => $orderby,
+									'show_count'   => $show_count,
+									'pad_counts'   => $pad_counts,
+									'hierarchical' => $hierarchical,
+									'title_li'     => $title,
+									'hide_empty'   => $empty
+								);
+								$all_categories = get_categories( $args );
+								foreach ($all_categories as $cat) {
+									if($cat->category_parent == 0) {
+										$category_id = $cat->term_id;       
+										echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a></li>'; 
+									}
 								}
-							}
 
-							echo '<div class="list-closer"></div>';
+								echo '<div class="list-closer"></div>';
 
-						echo '</ul>';
-					echo '</div>';
-				echo "</div></main><header>";
+							echo '</ul>';
+						echo '</div>';
+					echo "</div></main><header>";
+				}
 			}
 		],
 		[
 			Hooks::TAG      => 'woocommerce_after_main_content',
 			Hooks::CALLBACK => function() {
-				echo "<main class='content product-archive'><div class='wrap'>";
-				$cate = get_queried_object();
-				$cateID = $cate->term_id;
-				$args = array(
-					'status' => 'publish',
-					'category' => array( sanitize_title_with_dashes( substr(get_the_archive_title(), 10) ) ),
-					'orderby' => 'menu_order',
-					'order' => 'ASC'
-				);
-				$products = wc_get_products( $args );
-				foreach($products as $product) {
-					echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><div class='product-in-loop-wc'>";
-						echo "<h3>" . $product->get_name() . "</h3>";
-						echo '<div class="product-content">';
-							// $product->get_image_id();
-							//$product->get_gallery_image_ids();
-							echo '<div class="product-details">';
-								echo '<img src="' . get_the_post_thumbnail_url( $product->get_id(), 'full' ) . '"/>';
-							echo '</div>';
-							echo "<div class='product-details' style='color:#000'><strong>Product Details</strong><br/>" . $product->get_description() . "</div>";
-						echo '</div>';
-					echo "</div></a>";
+				if(get_the_archive_title()) {
+					echo "<main class='content product-archive'><div class='wrap'>";
+						$cate = get_queried_object();
+						$cateID = $cate->term_id;
+						$args = array(
+							'status' => 'publish',
+							'category' => array( sanitize_title_with_dashes( substr(get_the_archive_title(), 10) ) ),
+							'orderby' => 'menu_order',
+							'order' => 'ASC'
+						);
+						$products = wc_get_products( $args );
+						foreach($products as $product) {
+							echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><div class='product-in-loop-wc'>";
+								echo "<h3>" . $product->get_name() . "</h3>";
+								echo '<div class="product-content">';
+									// $product->get_image_id();
+									//$product->get_gallery_image_ids();
+									echo '<div class="product-details">';
+										echo '<img src="' . get_the_post_thumbnail_url( $product->get_id(), 'full' ) . '"/>';
+									echo '</div>';
+									echo "<div class='product-details' style='color:#000'><strong>Product Details</strong><br/>" . $product->get_description() . "</div>";
+								echo '</div>';
+							echo "</div></a>";
+						}
+						//print_r($products);
+					echo "</div></main>";
 				}
-				//print_r($products);
-				echo "</div></main>";
 			}
 		],
 		// Products Sidebar
