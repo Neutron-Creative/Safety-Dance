@@ -383,7 +383,7 @@ $core_hooks = [
 
 					// Header Loop
 					echo "</header><main class='content product-archive'><div class='wrap'>";
-						echo "<h1 style='margin-bottom:0 !important;>" . $product->get_name() . "</h1>";
+						echo "<h1 style='margin-bottom:0 !important;'>" . $product->get_name() . "</h1>";
 
 						// Sidebar
 							echo '<div class="sidebar" style="left: -44px !important;">';
