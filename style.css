@@ -874,6 +874,12 @@ main.product-archive .product-in-loop-wc {
 	text-decoration: none !important;
 	}
 
+main.product-archive .product-in-loop-wc .exclusive-badge {
+	height: auto !important;
+	max-width: 120px !important;
+	width: 100% !important;
+	}
+
 main.product-archive .product-in-loop-wc div {
 	display: flex;
 	flex-direction: column;
