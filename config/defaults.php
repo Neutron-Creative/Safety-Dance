@@ -325,20 +325,26 @@ $core_hooks = [
 						);
 						$products = wc_get_products( $args );
 						foreach($products as $product) {
+							$attachmentIDs = $product->get_gallery_image_ids();
+							$specificationBadges = $product->get_meta('specifications');
+
 							echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><div>";
-								echo "<h3>" . $product->get_name() . "</h3>";
+								echo "<div class='title-row'>";
+									echo "<h3>" . $product->get_name() . "</h3>";
+									if(in_array('exclusive', $specificationBadges)) {
+										echo '<img src="/wp-content/uploads/2019/01/millenium.gif"/>';
+									}
+								echo "</div>";
 								echo '<div class="product-content">';
 									// $product->get_image_id();
-									$attachmentIDs = $product->get_gallery_image_ids();
 									echo '<div class="product-details">';
 										echo '<img class="product-image" src="' . get_the_post_thumbnail_url( $product->get_id(), 'full' ) . '"/>';
 										foreach($attachmentIDs as $attachmentID) {
 											echo '<img class="product-gallery-image" src="' . wp_get_attachment_url( $attachmentID ) . '"/>';
 										}
-										$specificationBadges = $product->get_meta('specifications');
 										echo '<div class="specification-badges">';
 											foreach($specificationBadges as $badge) {
-												echo '<img src="/wp-content/uploads/2019/01/' . $badge . '.gif"/>';
+												if($badge != 'millenium' && $badge != 'exclusive') echo '<img src="/wp-content/uploads/2019/01/' . $badge . '.gif"/>';
 											}
 										echo '</div>';
 									echo '</div>';
