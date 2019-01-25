@@ -655,6 +655,11 @@ body.admin-bar .announcement-banner {
 	top: 32px;
 	}
 
+main.product-archive {
+	max-width: none !important;
+	padding-left: 95px !important;
+	}
+
 .announcement-banner {
 	background: #777;
 	color: #efefef;
