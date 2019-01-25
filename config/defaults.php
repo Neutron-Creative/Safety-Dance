@@ -255,6 +255,7 @@ $core_hooks = [
 			Hooks::TAG      => 'woocommerce_before_main_content',
 			Hooks::CALLBACK => function() {
 				if(!is_product()) {
+					// Category Archive
 					echo "</header><main class='content product-archive'><div class='wrap'>";
 						echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
 						echo "<p>" . get_the_archive_description() . "</p>";
@@ -300,6 +301,8 @@ $core_hooks = [
 							echo '</ul>';
 						echo '</div>';
 					echo "</div></main><header>";
+				} else {
+					// Single Product
 				}
 			}
 		],
@@ -307,6 +310,7 @@ $core_hooks = [
 			Hooks::TAG      => 'woocommerce_after_main_content',
 			Hooks::CALLBACK => function() {
 				if(!is_product()) {
+					// Category Archive
 					echo "<main class='content product-archive'><div class='wrap'>";
 						$cate = get_queried_object();
 						$cateID = $cate->term_id;
@@ -318,7 +322,7 @@ $core_hooks = [
 						);
 						$products = wc_get_products( $args );
 						foreach($products as $product) {
-							echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><div class='product-in-loop-wc'>";
+							echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'><p class='product-in-loop-wc'>";
 								echo "<h3>" . $product->get_name() . "</h3>";
 								echo '<div class="product-content">';
 									// $product->get_image_id();
@@ -328,10 +332,13 @@ $core_hooks = [
 									echo '</div>';
 									echo "<div class='product-details' style='color:#000'><strong>Product Details</strong><br/>" . $product->get_description() . "</div>";
 								echo '</div>';
+								echo '<p class="product-disclaimer">' . $product->get_meta('disclaimers') . '</p>';
 							echo "</div></a>";
 						}
 						//print_r($products);
 					echo "</div></main>";
+				} else {
+					// Single Product
 				}
 			}
 		],
