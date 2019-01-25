@@ -631,7 +631,7 @@ iframe {
 .site-container {
 	background-color: #fff;
 	background-image: url("/wp-content/uploads/2019/01/gradient-bg.png");
-	background-position: 0 50px !important;
+	background-position: 0 20px !important;
 	background-repeat: repeat-x !important;
 	background-size: 1px 155px;
 	border-radius: 8px;
