@@ -326,9 +326,12 @@ $core_hooks = [
 								echo "<h3>" . $product->get_name() . "</h3>";
 								echo '<div class="product-content">';
 									// $product->get_image_id();
-									//$product->get_gallery_image_ids();
+									$attachmentIDs = $product->get_gallery_image_ids();
 									echo '<div class="product-details">';
-										echo '<img src="' . get_the_post_thumbnail_url( $product->get_id(), 'full' ) . '"/>';
+										echo '<img class="product-image" src="' . get_the_post_thumbnail_url( $product->get_id(), 'full' ) . '"/>';
+										foreach($attachmentIDs as $attachmentID) {
+											echo '<img class="product-gallery-image" src="' . get_the_post_thumbnail_url( $attachmentID, 'full' ) . '"/>';
+										}
 									echo '</div>';
 									echo "<div class='product-details' style='color:#000'><strong>Product Details</strong><br/>" . $product->get_description() . "</div>";
 								echo '</div>';
