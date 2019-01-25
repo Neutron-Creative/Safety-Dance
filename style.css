@@ -1100,6 +1100,7 @@ body.single-product .wrap {
 .footer .footer-row .footer-item {
 	display: flex;
 	flex-direction: column;
+	margin: 5px;
 
 	align-content: center;
 	justify-content: center;
