@@ -1053,6 +1053,7 @@ body.single-product div.product {
 
 .footer-credits {
 	border-top: 1px solid #dfe2e5;
+	display: none;
 	padding: 3.2rem 0;
 	}
 
