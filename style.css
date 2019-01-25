@@ -969,6 +969,12 @@ body.single-product div.product {
 	display: none !important;
 	}
 
+body.single-product h1 {
+	font-size: 32px !important;
+	font-size: 3.2rem !important;
+	letter-spacing: 0.25 !important;
+	}
+
 .site-header {
 	background-color: #ff0;
 	border-bottom: 0;
