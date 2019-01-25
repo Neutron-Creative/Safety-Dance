@@ -335,6 +335,9 @@ $core_hooks = [
 										foreach($attachmentIDs as $attachmentID) {
 											echo '<img class="product-gallery-image" src="' . wp_get_attachment_url( $attachmentID ) . '"/>';
 										}
+										$specificationBadges = $product->get_meta('specifications');
+										echo 'Specification badges';
+										print_r($specificationBadges);
 									echo '</div>';
 									echo "<div class='product-details' style='color:#000'><strong>Product Details</strong><br/>" . $product->get_description() . "</div>";
 								echo '</div>';
