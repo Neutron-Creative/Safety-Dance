@@ -864,8 +864,10 @@ main.product-archive .wrap {
 
 main.product-archive .product-in-loop-wc {
 	border: none !important;
+	border-top: solid 2px #0094de !important;
 	margin-bottom: 20px !important;
 	outline: none !important;
+	padding-top: 10px !important;
 	text-decoration: none !important;
 	}
 
@@ -903,7 +905,7 @@ main.product-archive .product-in-loop-wc .product-content .product-details * {
 main.product-archive .product-in-loop-wc .product-content .product-details .product-image, main.product-archive .product-in-loop-wc .product-content .product-details .product-gallery-image {
 	display: block;
 	height: auto;
-	max-width: 150px !important;
+	max-width: 200px !important;
 	width: 100%;
 	}
 

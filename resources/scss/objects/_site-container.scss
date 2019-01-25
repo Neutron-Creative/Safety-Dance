@@ -250,7 +250,9 @@ main.product-archive {
         text-decoration:none!important;
         border:none!important;
         outline:none!important;
-        margin-bottom:20px!important;
+        margin-bottom: 20px!important;
+        border-top: solid 2px #0094DE !important;
+        padding-top: 10px !important;
         div {
             display: flex;
             flex-direction: column;
@@ -276,7 +278,7 @@ main.product-archive {
                 .product-image, .product-gallery-image {
                     display: block;
                     width: 100%;
-                    max-width: 150px !important;
+                    max-width: 200px !important;
                     height: auto;
                 }
             }
