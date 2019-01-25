@@ -311,7 +311,7 @@ $core_hooks = [
 		],
 		[
 			Hooks::TAG      => 'woocommerce_after_main_content',
-			Hooks::CALLBACK => function($product) {
+			Hooks::CALLBACK => function() {
 				if(!is_product()) {
 					// Category Archive
 					echo "<main class='content product-archive'><div class='wrap'>";
@@ -378,6 +378,7 @@ $core_hooks = [
 				} else {
 					// Single Product
 					echo 'Single Product!';
+					global $product;
 					print_r($product);
 				}
 			}
