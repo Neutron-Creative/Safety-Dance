@@ -1083,6 +1083,7 @@ body.single-product .wrap {
 	display: flex;
 	flex-direction: column;
 	padding: 50px 10px;
+	text-align: auto;
 
 	align-content: center;
 	justify-content: center;
@@ -1103,6 +1104,14 @@ body.single-product .wrap {
 	justify-content: center;
 	}
 
+.footer .footer-row.no-flex {
+	display: block;
+	margin: 0 auto;
+	max-width: 816px;
+	text-align: auto;
+	width: 100%;
+	}
+
 .footer .footer-row .footer-item {
 	display: flex;
 	flex-direction: column;
@@ -1114,6 +1123,12 @@ body.single-product .wrap {
 
 .footer .footer-row .footer-item.bold {
 	font-weight: 700 !important;
+	}
+
+.footer .footer-row .footer-item.no-flex {
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
 	}
 
 .footer .footer-row a {

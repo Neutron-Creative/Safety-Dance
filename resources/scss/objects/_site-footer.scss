@@ -34,6 +34,7 @@
 	align-content: center;
 	justify-content: center;
 	flex-direction: column;
+	text-align: auto;
 	* {
 		font-size: 14px !important;
 		color: #FFF;
@@ -44,6 +45,13 @@
 		align-content: center;
 		justify-content: center;
 		flex-direction: row;
+		&.no-flex {
+			width: 100%;
+			max-width: 816px;
+			display: block;
+			text-align: auto;
+			margin: 0 auto;
+		}
 		.footer-item {
 			display: flex;
 			align-content: center;
@@ -52,6 +60,11 @@
 			margin: 0 5px 10px 5px;
 			&.bold {
 				font-weight: 700 !important;
+			}
+			&.no-flex {
+				display: inline-block;
+				width: auto;
+				vertical-align: top;
 			}
 		}
 		a {
