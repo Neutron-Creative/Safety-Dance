@@ -10,6 +10,18 @@
 	li[id^='menu-item-4'] {
 		display: none !important;
 	}
+	nav.nav-primary {
+		background: #FFFF00 !important;
+		ul {
+			border: none !important;
+			li a {
+				width: 100% !important;
+				text-align: center !important;
+				background: none !important;
+				padding: 5px 0 !important;
+			}
+		}
+	}
 }
 
 @media(min-width:896px) {
@@ -18,7 +30,7 @@
 	}
 }
 
-@media(min-width:900px) {
+@media(max-width:900px) {
 	.site-header .wrap ul li a {
 		font-size: 16px !important;
 		background-size: 15px !important;
