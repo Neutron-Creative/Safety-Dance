@@ -929,6 +929,14 @@ main.product-archive .product-in-loop-wc .product-content .product-details .prod
 	width: 100%;
 	}
 
+main.product-archive .product-in-loop-wc .product-content .product-details .product-requirements h5 {
+	color: #000 !important;
+	font-size: 18px !important;
+	font-size: 1.8rem !important;
+	font-weight: 700 !important;
+	text-align: center !important;
+	}
+
 main.product-archive .product-in-loop-wc .product-content .specification-badges {
 	display: flex;
 	flex-direction: row;

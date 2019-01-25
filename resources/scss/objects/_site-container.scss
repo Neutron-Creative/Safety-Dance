@@ -294,6 +294,17 @@ main.product-archive {
                     max-width: 200px !important;
                     height: auto;
                 }
+                .product-requirements {
+                    h5 {
+                        font-size: 18px !important;
+                        text-align: center !important;
+                        font-weight: 700 !important;
+                        color: #000 !important;
+                    }
+                    li {
+
+                    }
+                }
             }
             .specification-badges {
                 display: flex;

@@ -357,8 +357,8 @@ $core_hooks = [
 										echo "<strong>Product Details</strong><br/>";
 										echo $product->get_description();
 										if($meetsRequirements) {
-											echo "<h5>Meets Requirements for Testing Standard(s) including but not limited to:</h5>";
 											echo "<ul class='product-requirements'>";
+											echo "<h5>Meets Requirements for Testing Standard(s) including but not limited to:</h5>";
 											foreach($meetsRequirements as $requirement) {
 												echo "<li>" . $requirement . "</li>";
 											}
