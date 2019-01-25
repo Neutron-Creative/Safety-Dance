@@ -1814,6 +1814,9 @@ body.single-product h1 {
 	li[id^="menu-item-2"] {
 		display: none !important;
 		}
+	nav.nav-secondary {
+		display: none;
+		}
 	.site-header .wrap {
 		flex-wrap: nowrap;
 		}

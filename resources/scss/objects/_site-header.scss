@@ -39,6 +39,9 @@
 	li[id^='menu-item-2'] {
 		display: none !important;
 	}
+	nav.nav-secondary {
+		display: none;
+	}
 }
 
 @media(max-width:950px) {
