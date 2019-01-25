@@ -900,9 +900,10 @@ main.product-archive .product-in-loop-wc .product-content .product-details * {
 	font-size: 1.4rem !important;
 	}
 
-main.product-archive .product-in-loop-wc .product-content .product-details .thumbnail {
+main.product-archive .product-in-loop-wc .product-content .product-details .product-image, main.product-archive .product-in-loop-wc .product-content .product-details .product-gallery-image {
 	display: block;
-	max-width: 150px;
+	height: auto;
+	max-width: 150px !important;
 	width: 100%;
 	}
 
