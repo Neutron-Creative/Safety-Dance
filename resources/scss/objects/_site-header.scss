@@ -12,8 +12,10 @@
 	}
 }
 
-li[id^='menu-item-2'] {
-	display: none;
+@media(min-width:896px) {
+	li[id^='menu-item-2'] {
+		display: none !important;
+	}
 }
 
 .site-header {
