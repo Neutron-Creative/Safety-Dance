@@ -50,6 +50,9 @@
 			justify-content: center;
 			flex-direction: column;
 			margin: 5px;
+			&.bold {
+				font-weight: 700 !important;
+			}
 		}
 		a {
 			color: #FFF;

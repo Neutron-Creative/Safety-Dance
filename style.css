@@ -1112,6 +1112,10 @@ body.single-product .wrap {
 	justify-content: center;
 	}
 
+.footer .footer-row .footer-item.bold {
+	font-weight: 700 !important;
+	}
+
 .footer .footer-row a {
 	color: #fff;
 	text-decoration: underline;
