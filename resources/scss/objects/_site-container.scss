@@ -267,6 +267,9 @@ main.product-archive {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            @media(max-width: 720px) {
+                flex-direction: column;
+            }
         }
         h3 {
                 font-style: italic !important;
@@ -296,6 +299,9 @@ main.product-archive {
                     width: 100%;
                     max-width: 200px !important;
                     height: auto;
+                    @media(max-width: 720px) {
+                        margin: 0 auto !important;
+                    }
                 }
                 .product-requirements {
                     margin-top: 10px !important;

@@ -2263,8 +2263,14 @@ main.product-archive .product-in-loop-wc .product-content .specification-badges 
 	}
 
 @media (max-width: 720px) {
+	main.product-archive .product-in-loop-wc .title-row {
+		flex-direction: column;
+		}
 	main.product-archive .product-in-loop-wc .product-content {
 		flex-direction: column !important;
+		}
+	main.product-archive .product-in-loop-wc .product-content .product-details .product-image, main.product-archive .product-in-loop-wc .product-content .product-details .product-gallery-image {
+		margin: 0 auto !important;
 		}
 	}
 
