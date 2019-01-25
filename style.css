@@ -1098,6 +1098,7 @@ body.single-product .wrap {
 .footer .footer-row {
 	display: flex;
 	flex-direction: row;
+	text-align: center;
 	width: 100%;
 
 	align-content: center;

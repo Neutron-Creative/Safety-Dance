@@ -255,12 +255,12 @@ $core_hooks = [
 			Hooks::TAG      => 'wp_footer',
 			Hooks::CALLBACK => function() {
 				echo '<div class="footer">';
-					echo '<div class="footer-row">';
-						echo '<a href="/" class="footer-item">[HOME]</a>';
-						echo '<a href="/about-edd/" class="footer-item">[ABOUT]</a>';
-						echo '<a href="/services/" class="footer-item">[CALIBRATION]</a>';
-						echo '<a href="/products/" class="footer-item">[STOREFRONT]</a>';
-						echo '<a href="/contact/" class="footer-item">[CONTACT]</a>';
+					echo '<div class="footer-row no-flex">';
+						echo '<a href="/" class="footer-item no-flex">[HOME]</a>';
+						echo '<a href="/about-edd/" class="footer-item no-flex">[ABOUT]</a>';
+						echo '<a href="/services/" class="footer-item no-flex">[CALIBRATION]</a>';
+						echo '<a href="/products/" class="footer-item no-flex">[STOREFRONT]</a>';
+						echo '<a href="/contact/" class="footer-item no-flex">[CONTACT]</a>';
 					echo '</div>';
 					echo '<div class="footer-row">';
 						echo '<div class="footer-item bold" style="text-align:right;">';
