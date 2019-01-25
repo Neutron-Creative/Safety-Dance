@@ -254,18 +254,14 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'woocommerce_before_main_content',
 			Hooks::CALLBACK => function() {
-
+				if(!is_product()) {
+					// Category Archive
 					echo "</header><main class='content product-archive'><div class='wrap'>";
-						if(!is_product()) {
-							echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
-							echo "<div style='display:flex;flex-direction:row;align-items:flex-start;'>";
-								echo "<div class='display:flex;flex-direction:column;'>" . get_the_archive_description() . "</div>";
-								echo "<img src='/wp-content/uploads/2019/01/ISO_accredited.gif'/>";
-							echo "</div>";
-						} else {
-							global $product;
-							echo "<h1>" . $product->get_name() . "</h1>";
-						}
+						echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
+						echo "<div style='display:flex;flex-direction:row;align-items:flex-start;'>";
+						echo "<div class='display:flex;flex-direction:column;'>" . get_the_archive_description() . "</div>";
+						echo "<img src='/wp-content/uploads/2019/01/ISO_accredited.gif'/>";
+						echo "</div>";
 
 						// Sidebar
 							echo '<div class="sidebar" style="left: -44px !important;">';
@@ -308,6 +304,9 @@ $core_hooks = [
 							echo '</ul>';
 						echo '</div>';
 					echo "</div></main><header>";
+				} else {
+					// Single Product
+				}
 			}
 		],
 		[
