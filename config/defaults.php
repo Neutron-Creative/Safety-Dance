@@ -269,7 +269,7 @@ $core_hooks = [
 							echo 'Cary, NC 27513 USA<br/>';
 							echo '<a class="yellow" href="mailto:info@ProductSafeT.com"><span style="color:#FFF">Email: </span>info@ProductSafeT.com</a>';
 						echo '</div>';
-						echo '<div class="footer-item bold">';
+						echo '<div class="footer-item bold" style="text-align:left;">';
 							echo 'Tel: 800-806-6236<br/>';
 							echo 'Tel: (Int.) 001-919-469-9434<br/>';
 							echo 'Fax: 919-469-5743<br/>';
