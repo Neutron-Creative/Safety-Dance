@@ -295,6 +295,7 @@ main.product-archive {
                     height: auto;
                 }
                 .product-requirements {
+                    margin-top: 10px !important;
                     h5 {
                         font-size: 18px !important;
                         text-align: center !important;
@@ -302,7 +303,10 @@ main.product-archive {
                         color: #000 !important;
                     }
                     li {
-
+                        display: inline-block;
+                        font-size: 17px !important;
+                        font-weight: 700 !important;
+                        margin: 0 10px 10px 0;
                     }
                 }
             }
