@@ -254,7 +254,35 @@ $core_hooks = [
 		[
 			Hooks::TAG      => 'wp_footer',
 			Hooks::CALLBACK => function() {
-				echo '<h1>Footer</h1>';
+				echo '<div class="footer">';
+					echo '<div class="footer-row">';
+						echo '<a href="/" class="footer-item">[HOME]</a>';
+						echo '<a href="/about-edd/" class="footer-item">[ABOUT]</a>';
+						echo '<a href="/services/" class="footer-item">[CALIBRATION]</a>';
+						echo '<a href="/products/" class="footer-item">[STOREFRONT]</a>';
+						echo '<a href="/contact/" class="footer-item">[CONTACT]</a>';
+					echo '</div>';
+					echo '<div class="footer-row">';
+						echo '<div class="footer-item">';
+							echo 'Educated Design &amp; Development<br/>';
+							echo '901 Sheldon Drive<br/>';
+							echo 'Cary, NC 27513 USA<br/>';
+							echo 'Email: <a href="mailto:info@ProductSafeT.com">info@ProductSafeT.com</a>';
+						echo '</div>';
+						echo '<div class="footer-item">';
+							echo 'Tel: 800-806-6236<br/>';
+							echo 'Tel: (Int.) 001-919-469-9434<br/>';
+							echo 'Fax: 919-469-5743<br/>';
+							echo 'URL: <a href="mailto:info@ProductSafeT.com">ProductSafeT.com</a>';
+						echo '</div>';
+					echo '</div>';
+					echo '<div class="footer-row">';
+						echo 'Educated Design &amp; Development, Inc. © ' . date("Y") . ' All Rights Reserved.';
+					echo'</div>';
+					echo '<div class="footer-row">';
+						echo '<span style="color:#CCC; font-family:Arial; font-size:16px; font-style:italic; font-weight:bold;">ED&amp;D products are RoHS, REACH, and Conflict-Minerals Free</span>';
+					echo '</div>';
+				echo '</div>';
 			}
 		],
 		// Products Archive Attempt 2
