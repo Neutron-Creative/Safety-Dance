@@ -2166,6 +2166,12 @@ main.product-archive .product-in-loop-wc div .product-content .product-details .
 		font-size: 4.2rem !important;
 		margin-bottom: 10px !important;
 		}
+	.sidebar {
+		display: none !important;
+		}
+	main.product-archive {
+		padding-left: 0 !important;
+		}
 	li[id^="menu-item-4"] {
 		display: none !important;
 		}
