@@ -262,6 +262,7 @@ main.product-archive {
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: space-between;
         }
         h3 {
                 font-style: italic !important;

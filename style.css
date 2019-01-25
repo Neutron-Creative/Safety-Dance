@@ -885,6 +885,7 @@ main.product-archive .product-in-loop-wc .title-row {
 	flex-direction: row;
 
 	align-items: center;
+	justify-content: space-between;
 	}
 
 main.product-archive .product-in-loop-wc h3 {
