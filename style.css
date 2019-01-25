@@ -2148,6 +2148,15 @@ main.product-archive .product-in-loop-wc div .product-content .product-details .
 		}
 	}
 
+@media (min-width: 900px) {
+	.site-header li a {
+		background-size: 15px !important;
+		font-size: 16px !important;
+		font-size: 1.6rem !important;
+		padding-left: 15px;
+		}
+	}
+
 @media (max-width: 895px) {
 	li[id^="menu-item-4"] {
 		display: none !important;
