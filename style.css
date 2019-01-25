@@ -2158,6 +2158,9 @@ main.product-archive .product-in-loop-wc div .product-content .product-details .
 	.site-container {
 		border-radius: 0 !important;
 		}
+	.site-inner {
+		padding: 0 10px !important;
+		}
 	li[id^="menu-item-4"] {
 		display: none !important;
 		}
