@@ -986,6 +986,13 @@ body.single-product .wrap {
 	align-items: flex-start;
 	}
 
+.header-row * {
+	color: #000 !important;
+	font-family: Arial, Gadget, sans-serif !important;
+	font-size: 14px !important;
+	font-size: 1.4rem !important;
+	}
+
 nav.woocommerce-pagination {
 	display: none !important;
 	}

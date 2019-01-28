@@ -356,6 +356,11 @@ body.single-product {
     display:flex;
     flex-direction:row;
     align-items:flex-start;
+    * {
+        font-size: 14px !important;
+        color: #000 !important;
+        font-family: Arial, Gadget, sans-serif !important;
+    }
     @media(max-width: 895px) {
         flex-direction: column;
         img {
