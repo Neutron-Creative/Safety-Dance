@@ -536,8 +536,10 @@ $core_hooks = [
 									echo '<img class="product-gallery-image" src="' . wp_get_attachment_url( $attachmentID ) . '"/>';
 								}
 								echo '<div class="specification-badges">';
-									foreach($specificationBadges as $badge) {
-										if($badge != 'millenium' && $badge != 'exclusive') echo '<img src="/wp-content/uploads/2019/01/' . $badge . '.gif"/>';
+									if(is_array($specificationBadges)) {
+										foreach($specificationBadges as $badge) {
+											if($badge != 'millenium' && $badge != 'exclusive') echo '<img src="/wp-content/uploads/2019/01/' . $badge . '.gif"/>';
+										}
 									}
 								echo '</div>';
 							echo '</div>';
@@ -547,8 +549,10 @@ $core_hooks = [
 								if($meetsRequirements) {
 									echo "<ul class='product-requirements'>";
 									echo "<h5>Meets Requirements for Testing Standard(s) including but not limited to:</h5>";
-									foreach($meetsRequirements as $requirement) {
-										echo "<li>" . $requirement . "</li>";
+									if(is_array($specificationBadges)) {
+										foreach($meetsRequirements as $requirement) {
+											echo "<li>" . $requirement . "</li>";
+										}
 									}
 									echo "</ul>";
 								}
