@@ -321,7 +321,7 @@ $core_hooks = [
 					echo "</header><main class='content product-archive'><div class='wrap'>";
 						echo "<h1>" . substr(get_the_archive_title(), 10) . "</h1>";
 						echo "<div class='header-row'>";
-						echo "<div class='display:flex;flex-direction:column;width:100%;'>" . $obj->get_meta('category_body') . "</div>";
+						echo "<div class='display:flex;flex-direction:column;width:100%;'>" . print_r($obj) . "</div>";
 						echo "<img src='/wp-content/uploads/2019/01/ISO_accredited.gif'/>";
 						echo "</div>";
 
