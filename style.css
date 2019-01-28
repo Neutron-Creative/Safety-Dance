@@ -1903,7 +1903,7 @@ nav.woocommerce-pagination {
 		display: none !important;
 		}
 	nav.nav-secondary {
-		display: none;
+		display: none !important;
 		}
 	.site-header .wrap {
 		flex-wrap: nowrap;
