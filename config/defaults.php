@@ -399,8 +399,10 @@ $core_hooks = [
 							$fullTable = $product->get_meta('full_table');
 
 							echo "<a class='product-in-loop-wc' href='" . get_permalink( $product->get_id() ) . "'>";
-								if(in_array('exclusive', $specificationBadges)) {
-									echo '<img class="exclusive-badge" src="/wp-content/uploads/2019/01/edd-exclusive.png"/>';
+								if(is_array($specificationBadges)) {
+									if(in_array('exclusive', $specificationBadges)) {
+										echo '<img class="exclusive-badge" src="/wp-content/uploads/2019/01/edd-exclusive.png"/>';
+									}
 								}
 								echo "<div style='display:block;width:100%;height:2px;margin-bottom:10px;margin-top:0;background-color:#0094DE;'></div>";
 								echo "<div class='title-row'>";
