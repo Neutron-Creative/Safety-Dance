@@ -404,13 +404,13 @@ $core_hooks = [
 								}
 								echo "<div style='display:block;width:100%;height:2px;margin-bottom:10px;margin-top:0;background-color:#0094DE;'></div>";
 								echo "<div class='title-row'>";
-									if($specificationBadges) {
+									if(is_array($specificationBadges)) {
 										if(in_array('new', $specificationBadges)) {
 											echo '<img src="/wp-content/uploads/2019/01/new.gi"/>';
 										}
 									}
 									echo "<h3>" . $product->get_name() . "</h3>";
-									if($specificationBadges) {
+									if(is_array($specificationBadges)) {
 										if(in_array('millenium', $specificationBadges)) {
 											echo '<img src="/wp-content/uploads/2019/01/millenium.gif"/>';
 										}
