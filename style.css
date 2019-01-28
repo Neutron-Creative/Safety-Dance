@@ -986,6 +986,10 @@ body.single-product .wrap {
 	align-items: flex-start;
 	}
 
+nav.woocommerce-pagination {
+	display: none !important;
+	}
+
 .site-header {
 	background-color: #ff0;
 	border-bottom: 0;
